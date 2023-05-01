@@ -185,8 +185,10 @@ const wave_material = new THREE.ShaderMaterial({
 
 			vec3 pos = position;
 			if (vUv.y > 0.0) {
-				float wave = sin(vUv.x * 40.0 + time * 2.0 * (sin(instanceColor.x + time * 0.5)) + instanceColor.x) * 0.05;
-				pos.y += wave;
+				float offset = instanceColor.x * 25.0 + (sin(instanceColor.x * 3.14 + time * 0.5) * 2.0);
+				float wave = sin(vUv.x * 40.0 + time * 2.0 + offset);
+				pos.y += wave * 0.05;
+				pos.x -= sin(wave * 0.2) * 0.05;
 			}
 			gl_Position = projectionMatrix * modelViewMatrix * instanceMatrix * vec4(pos, 1.0);
 
@@ -216,7 +218,7 @@ const wave_instance = new THREE.InstancedMesh(wave_geometry, wave_material, wave
 for (let i = 0; i < wave_count; i++) {
 	const p = i / wave_count;
 	const matrix = new THREE.Matrix4();
-	matrix.setPosition(0, -p, p);
+	matrix.setPosition(0, -p * 1.5, p);
 	wave_instance.setMatrixAt(i, matrix);
 	wave_instance.setColorAt(i, new THREE.Color(p, 0, 0));
 }
@@ -226,7 +228,8 @@ wave_instance.instanceColor.needsUpdate = true;
 scene.add(wave_instance);
 
 function waveResize() {
-	wave_instance.scale.set(window.innerWidth, window.innerHeight / 2, 50);
+	wave_instance.scale.set(window.innerWidth * 1.25, window.innerHeight / 3, 50);
+	wave_instance.position.y = -window.innerHeight / 7;
 }
 window.addEventListener('resize', waveResize);
 waveResize();
