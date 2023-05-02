@@ -89,10 +89,12 @@ function draw() {
 	const delta = Math.min(1, Math.max(0, (performance.now() - lastFrame) / 1000));
 	lastFrame = performance.now();
 
+	const despawn = (window.innerWidth / 2) * 1.1;
+
 	for (let index = sceneEmoteArray.length - 1; index >= 0; index--) {
 		const element = sceneEmoteArray[index];
-		element.position.x += delta * (window.innerWidth / 10) * (element.r2 / 2 + 0.5);
-		if (element.position.x > window.innerWidth / 2) {
+		element.position.x += delta * 150 * (element.r2 / 2 + 0.5);
+		if (element.position.x > despawn) {
 			sceneEmoteArray.splice(index, 1);
 			scene.remove(element);
 		} else {
@@ -233,7 +235,7 @@ function waveResize() {
 	for (let i = 0; i < emoteSpawns.length; i++) {
 		const spawn = emoteSpawns[i];
 		spawn.pos.z = spawn.index * 50 + 0.01;
-		spawn.pos.x = -window.innerWidth / 2;
+		spawn.pos.x = (-window.innerWidth / 2) * 1.1;
 		spawn.pos.y = wave_instance.position.y + (spawn.height + 0.35) * wave_instance.scale.y;
 	}
 
