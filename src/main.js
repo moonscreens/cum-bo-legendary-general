@@ -179,7 +179,9 @@ const wave_material = new THREE.ShaderMaterial({
 	uniforms: {
 		time: { value: 0 },
 		waveCount: { value: 40 },
+		wave_texture: { value: new THREE.TextureLoader().load('/wave.png') },
 	},
+	
 	vertexShader: /*glsl*/`
 		uniform float time;
 		uniform float waveCount;
@@ -204,17 +206,11 @@ const wave_material = new THREE.ShaderMaterial({
 	`,
 	fragmentShader: /*glsl*/`
 		uniform float time;
+		uniform sampler2D wave_texture;
 		varying vec2 vUv;
 
-		vec3 backgroundColor = vec3(${config.colors.paper.r}, ${config.colors.paper.g}, ${config.colors.paper.b});
-		vec3 darkColor = vec3(${config.colors.paperDark.r}, ${config.colors.paperDark.g}, ${config.colors.paperDark.b});
-
 		void main() {
-			if (vUv.y > 0.99) {
-				gl_FragColor = vec4(0.0, 0.0, 0.0, 1.0);
-			} else {
-				gl_FragColor = vec4(mix(darkColor, backgroundColor, min(1.0, vUv.y)), 1.0);
-			}
+			gl_FragColor = texture2D(wave_texture, vUv);
 		}
 	`,
 });
