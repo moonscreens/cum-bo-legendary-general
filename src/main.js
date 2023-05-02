@@ -2,6 +2,7 @@ import TwitchChat from "twitch-chat-emotes-threejs";
 import * as THREE from "three";
 import Stats from 'three/examples/jsm/libs/stats.module'
 import "./style.css";
+import config from "./config";
 
 /*
 ** connect to twitch chat
@@ -39,7 +40,7 @@ const ChatInstance = new TwitchChat({
 
 	textureHook: (texture) => {
 		//fix emotes looking washed out on new THREE.js versions
-		texture.encoding = THREE.sRGBEncoding;
+		texture.colorSpace = THREE.SRGBColorSpace;
 
 		//give a nice pixelated look when emotes are scaled up, but not down
 		texture.magFilter = THREE.NearestFilter;
@@ -130,7 +131,7 @@ const spawnEmote = (emotes) => {
 	// Set velocity to a random normalized value
 	group.velocity = new THREE.Vector3(
 		Math.random() * 2 + 0.5,
-		(Math.random() - 0.5) * 2,
+		(Math.random() - 0.5) * 0.5,
 		0
 	);
 	group.velocity.normalize();
@@ -156,9 +157,9 @@ ChatInstance.listen(spawnEmote);
 
 // spawn some fake emotes for testing purposes
 const placeholder_mats = [
-	new THREE.SpriteMaterial({ color: 0xff4444 }),
-	new THREE.SpriteMaterial({ color: 0x44ff44 }),
-	new THREE.SpriteMaterial({ color: 0x4444ff }),
+	new THREE.SpriteMaterial({ color: 0xff5555 }),
+	new THREE.SpriteMaterial({ color: 0x55ff55 }),
+	new THREE.SpriteMaterial({ color: 0x5555ff }),
 ]
 setInterval(() => {
 	spawnEmote([{
@@ -170,55 +171,61 @@ setInterval(() => {
 /*
 ** setup scene decorations
 */
-scene.background = new THREE.Color(0xf5c084);
+scene.background = new THREE.Color(config.colors.paper);
 
 const wave_geometry = new THREE.PlaneGeometry(1, 1, 256, 1);
 const wave_material = new THREE.ShaderMaterial({
+	side: THREE.DoubleSide,
 	uniforms: {
 		time: { value: 0 },
+		waveCount: { value: 40 },
 	},
 	vertexShader: /*glsl*/`
 		uniform float time;
+		uniform float waveCount;
 		varying vec2 vUv;
 		void main() {
 			vUv = uv;
 
-			vec3 pos = position;
-			if (vUv.y > 0.0) {
-				float offset = instanceColor.x * 25.0 + (sin(instanceColor.x * 3.14 + time * 0.5) * 2.0);
-				float wave = sin(vUv.x * 40.0 + time * 2.0 + offset);
-				pos.y += wave * 0.05;
-				pos.x -= sin(wave * 0.2) * 0.05;
+			vec4 pos = projectionMatrix * modelViewMatrix * instanceMatrix * vec4(position, 1.0);
+			if (uv.y > 0.0) {
+				float offset = instanceColor.x * 25.0 + (sin(instanceColor.x * 3.14 + time * 0.2) * 2.0);
+
+				float wave = (uv.x * waveCount) + time * 1.0 + offset;
+
+				float waveScale = 0.075;
+				pos.y += (sin(wave) + sin(instanceColor.x * 5.0 + time) * 0.25) * waveScale;
+				pos.x += cos(wave) * 0.5 * waveScale;
 			}
-			gl_Position = projectionMatrix * modelViewMatrix * instanceMatrix * vec4(pos, 1.0);
+			gl_Position = pos;
 
 		}
 	`,
 	fragmentShader: /*glsl*/`
 		uniform float time;
 		varying vec2 vUv;
+
+		vec3 backgroundColor = vec3(${config.colors.paper.r}, ${config.colors.paper.g}, ${config.colors.paper.b});
+		vec3 darkColor = vec3(${config.colors.paperDark.r}, ${config.colors.paperDark.g}, ${config.colors.paperDark.b});
+
 		void main() {
 			if (vUv.y > 0.99) {
 				gl_FragColor = vec4(0.0, 0.0, 0.0, 1.0);
 			} else {
-				gl_FragColor = vec4(
-					0.961 * (vUv.y * 0.5 + 0.5),
-					0.752 * (vUv.y * 0.5 + 0.5),
-					0.517 * (vUv.y * 0.5 + 0.5),
-					1.0
-				);
+				gl_FragColor = vec4(mix(darkColor, backgroundColor, min(1.0, vUv.y)), 1.0);
 			}
 		}
 	`,
 });
 
-const wave_count = 10;
+const wave_layer_count = 8;
 
-const wave_instance = new THREE.InstancedMesh(wave_geometry, wave_material, wave_count);
-for (let i = 0; i < wave_count; i++) {
-	const p = i / wave_count;
+const wave_instance = new THREE.InstancedMesh(wave_geometry, wave_material, wave_layer_count);
+for (let i = 0; i < wave_layer_count; i++) {
+	const p = i / (wave_layer_count-1);
+	console.log(p);
 	const matrix = new THREE.Matrix4();
-	matrix.setPosition(0, -p * 1.5, p);
+	matrix.setPosition(0, -Math.pow(p, 2) * 1.5, p);
 	wave_instance.setMatrixAt(i, matrix);
 	wave_instance.setColorAt(i, new THREE.Color(p, 0, 0));
 }
@@ -228,8 +235,11 @@ wave_instance.instanceColor.needsUpdate = true;
 scene.add(wave_instance);
 
 function waveResize() {
-	wave_instance.scale.set(window.innerWidth * 1.25, window.innerHeight / 3, 50);
-	wave_instance.position.y = -window.innerHeight / 7;
+	wave_instance.scale.set(window.innerWidth * 1.1, window.innerHeight / 4, 50);
+	wave_instance.position.y = -window.innerHeight / 5;
+
+	wave_material.uniforms.waveCount.value = window.innerWidth / 70;
+	wave_material.uniforms.waveCount.needsUpdate = true;
 }
 window.addEventListener('resize', waveResize);
 waveResize();
