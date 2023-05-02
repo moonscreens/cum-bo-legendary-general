@@ -191,9 +191,10 @@ const wave_material = new THREE.ShaderMaterial({
 			if (uv.y > 0.0) {
 				float offset = instanceColor.x * 25.0 + (sin(instanceColor.x * 3.14 + time * 0.2) * 2.0);
 
-				float wave = (uv.x * waveCount) + time * 1.0 + offset;
+				float distanceScale = max(instanceColor.x * 0.75 + 0.25, 0.1);
+				float wave = (uv.x * (waveCount / distanceScale)) + time * 1.0 + offset;
 
-				float waveScale = 0.075;
+				float waveScale = 0.075 * distanceScale;
 				pos.y += (sin(wave) + sin(instanceColor.x * 5.0 + time) * 0.25) * waveScale;
 				pos.x += cos(wave) * 0.5 * waveScale;
 			}
