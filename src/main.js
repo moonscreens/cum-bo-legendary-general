@@ -99,7 +99,7 @@ function draw() {
 			scene.remove(element);
 		} else {
 			const sin = Math.sin(element.position.x / 50 + element.r1 * Math.PI);
-			element.position.y =  sin * (10 + element.r2 * 10) + element.originPos.y;
+			element.position.y = sin * (10 + element.r2 * 10) + element.originPos.y;
 			const sin2 = Math.sin(element.position.x / 50 + element.r1 * Math.PI + Math.PI / 2);
 			element.rotation.z = sin2 * 0.25;
 		}
@@ -173,7 +173,7 @@ const wave_material = new THREE.ShaderMaterial({
 		waveCount: { value: 40 },
 		wave_texture: { value: new THREE.TextureLoader().load('/wave.png') },
 	},
-	
+
 	vertexShader: /*glsl*/`
 		uniform float time;
 		uniform float waveCount;
@@ -186,11 +186,9 @@ const wave_material = new THREE.ShaderMaterial({
 				float offset = instanceColor.x * 25.0 + (sin(instanceColor.x * 3.14 + time * 0.2) * 2.0);
 
 				float distanceScale = max(instanceColor.x * 0.75 + 0.25, 0.1);
-				float wave = (uv.x * (waveCount / distanceScale)) + time * 1.0 + offset;
-
+				float wave = (uv.x * (waveCount / distanceScale)) + offset;
 				float waveScale = 0.075 * distanceScale;
 				pos.y += (sin(wave) + sin(instanceColor.x * 5.0 + time) * 0.25) * waveScale;
-				pos.x += cos(wave) * 0.5 * waveScale;
 			}
 			gl_Position = pos;
 
@@ -211,7 +209,7 @@ const wave_layer_count = 8;
 
 const wave_instance = new THREE.InstancedMesh(wave_geometry, wave_material, wave_layer_count);
 for (let i = 0; i < wave_layer_count; i++) {
-	const p = i / (wave_layer_count-1);
+	const p = i / (wave_layer_count - 1);
 	console.log(p);
 	const matrix = new THREE.Matrix4();
 	const height = -Math.pow(p, 2) * 1.5;
@@ -220,7 +218,7 @@ for (let i = 0; i < wave_layer_count; i++) {
 	wave_instance.setColorAt(i, new THREE.Color(p, 0, 0));
 
 	if (i < wave_layer_count - 2) {
-		emoteSpawns.push({pos: new THREE.Vector3(), index: p, height});
+		emoteSpawns.push({ pos: new THREE.Vector3(), index: p, height });
 	}
 }
 wave_instance.frustumCulled = false;
