@@ -49,6 +49,31 @@ const ChatInstance = new TwitchChat({
 	maximumEmoteLimit: 3,
 })
 
+const noiseCanvas = document.createElement('canvas');
+function regenNoise() {
+	noiseCanvas.width = window.innerWidth * window.devicePixelRatio * 0.25;
+	noiseCanvas.height = window.innerHeight * window.devicePixelRatio * 0.25;
+	const ctx = noiseCanvas.getContext("2d");
+
+	for (let x = 0; x < noiseCanvas.width; x++) {
+		for (let y = 0; y < noiseCanvas.height; y++) {
+			const value = Math.floor(Math.random() * 255);
+			ctx.fillStyle = `rgb(${value}, ${value}, ${value})`;
+			ctx.fillRect(x, y, 1, 1);
+		}
+	}
+}
+regenNoise();
+window.addEventListener('resize', regenNoise);
+window.addEventListener('DOMContentLoaded', () => {
+	document.body.appendChild(noiseCanvas);
+	noiseCanvas.style.position = "absolute";
+	noiseCanvas.style.top = "0";
+	noiseCanvas.style.left = "0";
+	noiseCanvas.style.mixBlendMode = "multiply";
+	noiseCanvas.style.opacity = 0.2;
+})
+
 /*
 ** Initiate ThreejS scene
 */
