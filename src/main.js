@@ -71,7 +71,7 @@ window.addEventListener('DOMContentLoaded', () => {
 	noiseCanvas.style.top = "0";
 	noiseCanvas.style.left = "0";
 	noiseCanvas.style.mixBlendMode = "multiply";
-	noiseCanvas.style.opacity = 0.2;
+	noiseCanvas.style.opacity = 0.1;
 })
 
 /*
