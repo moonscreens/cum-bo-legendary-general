@@ -108,6 +108,14 @@ function draw() {
 
 	wave_material.uniforms.time.value = performance.now() / 1000;
 
+	cumBo.position.set(
+		Math.sin(Date.now() / 5000 + Math.PI / 2) * 30,
+		Math.sin(Date.now() / 4000) * 30,
+		0,
+	);
+	cumBo.position.add(cumBo.originPos);
+	cumBo.material.rotation = Math.sin(Date.now() / 11000) * 0.1;
+
 	renderer.render(scene, camera);
 	if (stats) stats.end();
 };
@@ -137,7 +145,7 @@ const spawnEmote = (emotes) => {
 
 	group.position.copy(emoteSpawns[Math.floor(Math.random() * emoteSpawns.length)].pos);
 	group.originPos = group.position.clone();
-	group.scale.setScalar(64);
+	group.scale.setScalar(80);
 	group.r1 = Math.random();
 	group.r2 = Math.random();
 
@@ -166,7 +174,40 @@ ChatInstance.listen(spawnEmote);
 */
 scene.background = new THREE.Color(config.colors.paper);
 
-const wave_geometry = new THREE.PlaneGeometry(1, 1, 256, 1);
+const backgroundImage = new THREE.Sprite(new THREE.SpriteMaterial({
+	map: new THREE.TextureLoader().load('/background.png'),
+}))
+backgroundImage.scale.x = 1920;
+backgroundImage.scale.y = 1080;
+backgroundImage.position.z = -50;
+backgroundImage.material.map.colorSpace = THREE.SRGBColorSpace;
+scene.add(backgroundImage);
+
+const startingSoonText = new THREE.Sprite(new THREE.SpriteMaterial({
+	map: new THREE.TextureLoader().load('/starting soon.png'),
+	opacity: 0.75,
+}))
+startingSoonText.scale.x = 1024;
+startingSoonText.scale.y = 256;
+startingSoonText.scale.multiplyScalar(0.7);
+startingSoonText.position.z = 45;
+startingSoonText.position.x = 1920 / 2 - startingSoonText.scale.x / 2;
+startingSoonText.position.y = -(1080 / 2 - startingSoonText.scale.y / 3);
+startingSoonText.material.map.colorSpace = THREE.SRGBColorSpace;
+scene.add(startingSoonText);
+
+const cumBo = new THREE.Sprite(new THREE.SpriteMaterial({
+	map: new THREE.TextureLoader().load('/cumbo.png'),
+}))
+cumBo.scale.setScalar(960);
+cumBo.position.z = 40;
+cumBo.position.x = -600;
+cumBo.position.y = 150;
+cumBo.material.map.colorSpace = THREE.SRGBColorSpace;
+scene.add(cumBo);
+cumBo.originPos = cumBo.position.clone();
+
+const wave_geometry = new THREE.PlaneGeometry(1, 1, 512, 1);
 const wave_material = new THREE.ShaderMaterial({
 	side: THREE.DoubleSide,
 	uniforms: {
@@ -186,7 +227,7 @@ const wave_material = new THREE.ShaderMaterial({
 			if (uv.y > 0.0) {
 				float offset = instanceColor.x * 25.0 + (sin(instanceColor.x * 3.14 + time * 0.2) * 2.0);
 
-				float distanceScale = max(instanceColor.x * 0.75 + 0.25, 0.1);
+				float distanceScale =instanceColor.x * 0.5 + 0.5;
 				float wave = (uv.x * (waveCount / distanceScale)) + offset;
 				float waveScale = 0.075 * distanceScale;
 				pos.y += (sin(wave) + sin(instanceColor.x * 5.0 + time) * 0.25) * waveScale;
@@ -213,7 +254,7 @@ for (let i = 0; i < wave_layer_count; i++) {
 	const p = i / (wave_layer_count - 1);
 	console.log(p);
 	const matrix = new THREE.Matrix4();
-	const height = -Math.pow(p, 2) * 1.5;
+	const height = -0.5 - Math.pow(p, 3);
 	matrix.setPosition(0, height, p);
 	wave_instance.setMatrixAt(i, matrix);
 	wave_instance.setColorAt(i, new THREE.Color(p, 0, 0));
@@ -235,7 +276,7 @@ function waveResize() {
 		const spawn = emoteSpawns[i];
 		spawn.pos.z = spawn.index * 50 + 0.01;
 		spawn.pos.x = (-window.innerWidth / 2) * 1.1;
-		spawn.pos.y = wave_instance.position.y + (spawn.height + 0.35) * wave_instance.scale.y;
+		spawn.pos.y = wave_instance.position.y + (spawn.height + 0.4) * wave_instance.scale.y;
 	}
 
 	wave_material.uniforms.waveCount.value = window.innerWidth / 70;
