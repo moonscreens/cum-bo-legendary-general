@@ -208,13 +208,17 @@ scene.add(cumBo);
 cumBo.originPos = cumBo.position.clone();
 
 const wave_geometry = new THREE.PlaneGeometry(1, 1, 512, 1);
+const wave_texture = new THREE.TextureLoader().load('/wave.png');
+wave_texture.wrapS = THREE.RepeatWrapping;
+wave_texture.minFilter = THREE.LinearFilter;
 const wave_material = new THREE.ShaderMaterial({
 	side: THREE.DoubleSide,
+	transparent: true,
 	uniforms: {
 		time: { value: 0 },
 		waveCount: { value: 40 },
 		waveHeight: { value: 0.075 },
-		wave_texture: { value: new THREE.TextureLoader().load('/wave.png') },
+		wave_texture: { value: wave_texture },
 	},
 
 	vertexShader: /*glsl*/`
@@ -222,13 +226,14 @@ const wave_material = new THREE.ShaderMaterial({
 		uniform float waveCount;
 		uniform float waveHeight;
 		varying vec2 vUv;
+		varying float waveOffset;
 		void main() {
 			vUv = uv;
 
 			vec4 pos = projectionMatrix * modelViewMatrix * instanceMatrix * vec4(position, 1.0);
 			if (uv.y > 0.0) {
 				float offset = instanceColor.x * 25.0 + (sin(instanceColor.x * 3.14 + time * 0.2) * 2.0);
-
+				waveOffset = instanceColor.x;
 				float distanceScale =instanceColor.x * 0.5 + 0.5;
 				float wave = (uv.x * (waveCount / distanceScale)) + offset;
 				float waveScale = waveHeight * distanceScale;
@@ -241,10 +246,14 @@ const wave_material = new THREE.ShaderMaterial({
 	fragmentShader: /*glsl*/`
 		uniform float time;
 		uniform sampler2D wave_texture;
+		uniform float waveCount;
 		varying vec2 vUv;
+		varying float waveOffset;
 
 		void main() {
-			gl_FragColor = texture2D(wave_texture, vUv);
+			gl_FragColor = texture2D(wave_texture,
+				vec2(vUv.x * (waveCount/4.0) + time * 0.2 + waveOffset, vUv.y)
+			);
 		}
 	`,
 });
@@ -284,9 +293,11 @@ function waveResize() {
 	wave_material.uniforms.waveCount.value = window.innerWidth * 0.015;
 	wave_material.uniforms.waveCount.needsUpdate = true;
 
-	
+
 	wave_material.uniforms.waveHeight.value = 0.075 / (window.innerHeight / 1080);
 	wave_material.uniforms.waveHeight.needsUpdate = true;
+
+	wave_texture.repeat.x = wave_material.uniforms.waveCount * 2;
 }
 window.addEventListener('resize', waveResize);
 waveResize();
