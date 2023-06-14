@@ -199,7 +199,7 @@ scene.add(startingSoonText);
 const cumBo = new THREE.Sprite(new THREE.SpriteMaterial({
 	map: new THREE.TextureLoader().load('/cumbo.png'),
 }))
-cumBo.scale.setScalar(960);
+cumBo.scale.setScalar(700);
 cumBo.position.z = 40;
 cumBo.position.x = -600;
 cumBo.position.y = 150;
