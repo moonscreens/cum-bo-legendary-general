@@ -213,12 +213,14 @@ const wave_material = new THREE.ShaderMaterial({
 	uniforms: {
 		time: { value: 0 },
 		waveCount: { value: 40 },
+		waveHeight: { value: 0.075 },
 		wave_texture: { value: new THREE.TextureLoader().load('/wave.png') },
 	},
 
 	vertexShader: /*glsl*/`
 		uniform float time;
 		uniform float waveCount;
+		uniform float waveHeight;
 		varying vec2 vUv;
 		void main() {
 			vUv = uv;
@@ -229,7 +231,7 @@ const wave_material = new THREE.ShaderMaterial({
 
 				float distanceScale =instanceColor.x * 0.5 + 0.5;
 				float wave = (uv.x * (waveCount / distanceScale)) + offset;
-				float waveScale = 0.075 * distanceScale;
+				float waveScale = waveHeight * distanceScale;
 				pos.y += (sin(wave) + sin(instanceColor.x * 5.0 + time) * 0.25) * waveScale;
 			}
 			gl_Position = pos;
@@ -279,8 +281,12 @@ function waveResize() {
 		spawn.pos.y = wave_instance.position.y + (spawn.height + 0.4) * wave_instance.scale.y;
 	}
 
-	wave_material.uniforms.waveCount.value = window.innerWidth / 70;
+	wave_material.uniforms.waveCount.value = window.innerWidth * 0.015;
 	wave_material.uniforms.waveCount.needsUpdate = true;
+
+	
+	wave_material.uniforms.waveHeight.value = 0.075 / (window.innerHeight / 1080);
+	wave_material.uniforms.waveHeight.needsUpdate = true;
 }
 window.addEventListener('resize', waveResize);
 waveResize();
