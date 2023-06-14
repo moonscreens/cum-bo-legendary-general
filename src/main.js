@@ -191,8 +191,8 @@ startingSoonText.scale.x = 1024;
 startingSoonText.scale.y = 256;
 startingSoonText.scale.multiplyScalar(0.7);
 startingSoonText.position.z = 45;
-startingSoonText.position.x = 1920 / 2 - startingSoonText.scale.x / 2;
-startingSoonText.position.y = -(1080 / 2 - startingSoonText.scale.y / 3);
+startingSoonText.position.x = window.innerWidth / 2 - startingSoonText.scale.x / 2;
+startingSoonText.position.y = -(window.innerHeight / 2 - startingSoonText.scale.y / 3);
 startingSoonText.material.map.colorSpace = THREE.SRGBColorSpace;
 scene.add(startingSoonText);
 
