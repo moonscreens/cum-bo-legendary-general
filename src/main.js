@@ -183,18 +183,18 @@ backgroundImage.position.z = -50;
 backgroundImage.material.map.colorSpace = THREE.SRGBColorSpace;
 scene.add(backgroundImage);
 
-const startingSoonText = new THREE.Sprite(new THREE.SpriteMaterial({
-	map: new THREE.TextureLoader().load('/starting soon.png'),
-	opacity: 0.75,
-}))
-startingSoonText.scale.x = 1024;
-startingSoonText.scale.y = 256;
-startingSoonText.scale.multiplyScalar(0.7);
-startingSoonText.position.z = 45;
-startingSoonText.position.x = window.innerWidth / 2 - startingSoonText.scale.x / 2;
-startingSoonText.position.y = -(window.innerHeight / 2 - startingSoonText.scale.y / 3);
-startingSoonText.material.map.colorSpace = THREE.SRGBColorSpace;
-scene.add(startingSoonText);
+// const startingSoonText = new THREE.Sprite(new THREE.SpriteMaterial({
+// 	map: new THREE.TextureLoader().load('/starting soon.png'),
+// 	opacity: 0.75,
+// }))
+// startingSoonText.scale.x = 1024;
+// startingSoonText.scale.y = 256;
+// startingSoonText.scale.multiplyScalar(0.7);
+// startingSoonText.position.z = 45;
+// startingSoonText.position.x = window.innerWidth / 2 - startingSoonText.scale.x / 2;
+// startingSoonText.position.y = -(window.innerHeight / 2 - startingSoonText.scale.y / 3);
+// startingSoonText.material.map.colorSpace = THREE.SRGBColorSpace;
+// scene.add(startingSoonText);
 
 const cumBo = new THREE.Sprite(new THREE.SpriteMaterial({
 	map: new THREE.TextureLoader().load('/cumbo.png'),
