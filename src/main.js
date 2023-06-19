@@ -45,6 +45,38 @@ const ChatInstance = new TwitchChat({
 		texture.magFilter = THREE.NearestFilter;
 	},
 
+	materialHook: (material) => {
+		// add sepia filter to emotes
+		material.onBeforeCompile = (shader) => {
+			shader.fragmentShader = shader.fragmentShader.replace(
+				'#include <color_fragment>',
+				`
+				#include <color_fragment>
+
+				float rr = .6;
+				float rg = .769;
+				float rb = .389;
+				float ra = 0.0;
+				
+				float gr = .3;
+				float gg = .686;
+				float gb = .168;
+				float ga = 0.0;
+				
+				float br = .272;
+				float bg = .534;
+				float bb = .131;
+				float ba = 0.0;
+				
+				float red = (rr * diffuseColor.r) + (rb * diffuseColor.b) + (rg * diffuseColor.g) + (ra * diffuseColor.a);
+				float green = (gr * diffuseColor.r) + (gb * diffuseColor.b) + (gg * diffuseColor.g) + (ga * diffuseColor.a);
+				float blue = (br * diffuseColor.r) + (bb * diffuseColor.b) + (bg * diffuseColor.g) + (ba * diffuseColor.a);
+				diffuseColor.rgb = vec3(red, green, blue);
+				`,
+			);
+		};
+	},
+
 	channels,
 	maximumEmoteLimit: 3,
 })
