@@ -301,3 +301,25 @@ function waveResize() {
 }
 window.addEventListener('resize', waveResize);
 waveResize();
+
+
+
+
+const haikuContainer = document.querySelector('.haiku');
+import { haikus } from './haikus.js';
+let haikuIndex = -1;
+async function haikuFunction() {
+	haikuIndex++;
+	if (haikuIndex >= haikus.length) haikuIndex = 0;
+
+	const haiku = haikus[haikuIndex];
+	haikuContainer.innerHTML = '';
+	for (let i = 0; i < haiku.length; i++) {
+		haikuContainer.innerHTML += haiku[i];
+		await new Promise(r => setTimeout(r, 30));
+	}
+};
+
+setInterval(haikuFunction, 30000);
+
+haikuFunction();
