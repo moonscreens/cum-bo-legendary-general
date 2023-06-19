@@ -309,7 +309,11 @@ const haikuContainer = document.querySelector('.haiku');
 import { haikus } from './haikus.js';
 let haikuIndex = -1;
 const typingSpeed = 30;
+let processingHaiku = false;
 async function haikuFunction() {
+	if (processingHaiku) return;
+	processingHaiku = true;
+
 	while (haikuContainer.textContent.length > 0) {
 		haikuContainer.textContent = haikuContainer.textContent.slice(0, -1);
 		await new Promise(r => setTimeout(r, typingSpeed / 2));
@@ -324,6 +328,8 @@ async function haikuFunction() {
 		haikuContainer.textContent += haiku[i];
 		await new Promise(r => setTimeout(r, typingSpeed));
 	}
+
+	processingHaiku = false;
 };
 
 setInterval(haikuFunction, 15000);

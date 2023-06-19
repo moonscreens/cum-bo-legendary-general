@@ -130,16 +130,16 @@ Angry words from his chat flood,
 Get snipped, no more trolls.`,
 
 	`In the chat you lurk,
-	Vasectomy you need,
-	Silence your offspring.`,
+Vasectomy you need,
+Silence your offspring.`,
 
 	`Words can't hurt my soul,
 Snip those cords, let the hate go,
-	Vasectomy, bro.`,
+Vasectomy, bro.`,
 
 	`Trolls breeding like flies,
-	Vasectomy, their demise,
-	Chat's peace shall arise.`,
+Vasectomy, their demise,
+Chat's peace shall arise.`,
 
 	`Angry streamer roars,
 Vasectomy for trolls,
