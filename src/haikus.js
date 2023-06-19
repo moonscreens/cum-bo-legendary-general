@@ -122,6 +122,90 @@ Moonmoon's here, my dears.`,
 	`In the realm of memes,
 Embrace the silly and dumb,
 Laughter's therapy.`,
+
+	`In the realm of Twitch,
+Moonmoon shares his wisdom,
+Haikus for all tasks.`,
+
+	`Nipple itches deep,
+Gentle strokes, relief bestowed,
+Scratch with grace, friend.`,
+
+	`Bald head shining bright,
+Wisdom gleams in moonlit stream,
+Embrace your baldness.`,
+
+	`Ball itch is a plight,
+Patience is key, my friends,
+Resist urge to scratch.`,
+
+	`Streaming all night long,
+Energy wanes, mind grows weak,
+Hydrate, refuel.`,
+
+	`Game grips tight, tense hands,
+Stretch and flex, find equilibrium,
+Relax, improve aim.`,
+
+	`Moonlight on plush chair,
+Posture matters, oh so much,
+Sit up tall, proud streamer.`,
+
+	`Chat's endless emotes,
+Laughter echoes through the stream,
+Share joy with emotes.`,
+
+	`Don't forget to eat,
+Nibble on snacks, fuel the grind,
+Keep hunger at bay.`,
+
+	`Sleepless nights, fatigue,
+Rest your weary eyes, dear streamer,
+Dreams fuel creativity.`,
+
+	`Tips for life's journey,
+Moonmoon's haikus guide the way,
+Balance, peace, and growth.`,
+
+	`Sitting at my desk,
+Health whispers in my ear's reach,
+Stretch, breathe, find balance.`,
+
+	`Bulging waistline groans,
+Posture suffers, body moans,
+Move, hydrate, thrive.`,
+
+	`Desk bound, mind on fire,
+Step away, nature's attire,
+Refreshed, create higher.`,
+
+	`Fingers dance on keys,
+Eyes locked on screen's mystery,
+Break, blink, set eyes free.`,
+
+	`Snacks tempt and beckon,
+Choose wisely, nourish within,
+Fuel for wins and grins.`,
+
+	`Stretch like morning sun,
+Limbs untangle, breath begun,
+Rejuvenation.`,
+
+	`Water's pure embrace,
+Hydration's vital chase,
+Desk wellness, grace.`,
+
+	`Mindful, be aware,
+Balance work and self with care,
+Desk health is a dare.`,
+
+	`Time ticks, hours pass,
+Stand tall, give your back some sass,
+Ergonomics class.`,
+
+	`Moonmoon's desk decree,
+Embrace wellness, set mind free,
+Stream health, let it be.`,
 ]
 
 const vasectomy = [
