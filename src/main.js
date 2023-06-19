@@ -61,9 +61,8 @@ const ChatInstance = new TwitchChat({
 				float blue = diffuseColor.r * 0.272 + diffuseColor.g * 0.534 + diffuseColor.b * 0.131;
 
 				vec3 sepiaColor = vec3(red, green, blue);
-				float sepiaAmount = 0.5;
 
-				diffuseColor.rgb = mix(diffuseColor.rgb, sepiaColor, sepiaAmount);
+				diffuseColor.rgb = mix(diffuseColor.rgb, sepiaColor, 0.6);
 				`,
 			);
 		};
@@ -331,6 +330,7 @@ waveResize();
 
 const haikuContainer = document.querySelector('.haiku');
 import { haikus } from './haikus.js';
+console.log(`haikus: ${haikus.length}`);
 let haikuIndex = -1;
 const typingSpeed = 30;
 let processingHaiku = false;
