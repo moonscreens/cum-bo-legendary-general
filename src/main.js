@@ -53,25 +53,17 @@ const ChatInstance = new TwitchChat({
 				`
 				#include <color_fragment>
 
-				float rr = .6;
-				float rg = .769;
-				float rb = .389;
-				float ra = 0.0;
-				
-				float gr = .3;
-				float gg = .686;
-				float gb = .168;
-				float ga = 0.0;
-				
-				float br = .272;
-				float bg = .534;
-				float bb = .131;
-				float ba = 0.0;
-				
-				float red = (rr * diffuseColor.r) + (rb * diffuseColor.b) + (rg * diffuseColor.g) + (ra * diffuseColor.a);
-				float green = (gr * diffuseColor.r) + (gb * diffuseColor.b) + (gg * diffuseColor.g) + (ga * diffuseColor.a);
-				float blue = (br * diffuseColor.r) + (bb * diffuseColor.b) + (bg * diffuseColor.g) + (ba * diffuseColor.a);
-				diffuseColor.rgb = vec3(red, green, blue);
+				//diffuseColor.rgb = mix(diffuseColor.rgb, sepiaColor, sepiaAmount);
+
+				//sepia filter
+				float red = diffuseColor.r * 0.393 + diffuseColor.g * 0.769 + diffuseColor.b * 0.189;
+				float green = diffuseColor.r * 0.349 + diffuseColor.g * 0.686 + diffuseColor.b * 0.168;
+				float blue = diffuseColor.r * 0.272 + diffuseColor.g * 0.534 + diffuseColor.b * 0.131;
+
+				vec3 sepiaColor = vec3(red, green, blue);
+				float sepiaAmount = 0.5;
+
+				diffuseColor.rgb = mix(diffuseColor.rgb, sepiaColor, sepiaAmount);
 				`,
 			);
 		};
