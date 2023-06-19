@@ -308,18 +308,24 @@ waveResize();
 const haikuContainer = document.querySelector('.haiku');
 import { haikus } from './haikus.js';
 let haikuIndex = -1;
+const typingSpeed = 30;
 async function haikuFunction() {
+	while (haikuContainer.textContent.length > 0) {
+		haikuContainer.textContent = haikuContainer.textContent.slice(0, -1);
+		await new Promise(r => setTimeout(r, typingSpeed / 2));
+	}
+
 	haikuIndex++;
 	if (haikuIndex >= haikus.length) haikuIndex = 0;
 
 	const haiku = haikus[haikuIndex];
-	haikuContainer.innerHTML = '';
+	haikuContainer.textContent = '';
 	for (let i = 0; i < haiku.length; i++) {
-		haikuContainer.innerHTML += haiku[i];
-		await new Promise(r => setTimeout(r, 30));
+		haikuContainer.textContent += haiku[i];
+		await new Promise(r => setTimeout(r, typingSpeed));
 	}
 };
 
-setInterval(haikuFunction, 30000);
+setInterval(haikuFunction, 15000);
 
 haikuFunction();
