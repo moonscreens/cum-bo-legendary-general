@@ -222,10 +222,10 @@ scene.add(backgroundImage);
 const cumBo = new THREE.Sprite(new THREE.SpriteMaterial({
 	map: new THREE.TextureLoader().load('/cumbo.png'),
 }))
-cumBo.scale.setScalar(700);
-cumBo.position.z = 40;
-cumBo.position.x = -600;
-cumBo.position.y = 150;
+cumBo.scale.setScalar(900);
+cumBo.position.z = 25;
+cumBo.position.x = -500;
+cumBo.position.y = 120;
 cumBo.material.map.colorSpace = THREE.SRGBColorSpace;
 scene.add(cumBo);
 cumBo.originPos = cumBo.position.clone();
