@@ -286,7 +286,6 @@ const wave_layer_count = 8;
 const wave_instance = new THREE.InstancedMesh(wave_geometry, wave_material, wave_layer_count);
 for (let i = 0; i < wave_layer_count; i++) {
 	const p = i / (wave_layer_count - 1);
-	console.log(p);
 	const matrix = new THREE.Matrix4();
 	const height = -0.5 - Math.pow(p, 3);
 	matrix.setPosition(0, height, p);
