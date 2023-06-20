@@ -386,6 +386,12 @@ Play Metal Gear Solid Four?
 Increase the timer
 
 	Morflow`,
+
+	`Head empty like scalp
+Find yourself within the void
+God Gamer returns
+
+	SV`
 ]
 for (let i = 0; i < userSubmitted.length; i++) {
 	userSubmitted[i] = userSubmitted[i] + '\n\t' + randomDate();
