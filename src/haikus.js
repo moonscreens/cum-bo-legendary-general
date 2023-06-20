@@ -373,7 +373,7 @@ const userSubmitted = [
 	`teach man to cum
 never hungry
 
-	PersonNo4`,
+	by PersonNo4`,
 
 	`Never fear the fall
 Only fear the time you lose
@@ -385,355 +385,355 @@ Another reset
 Play Metal Gear Solid Four?
 Increase the timer
 
-	Morflow`,
+	by Morflow`,
 
 	`Head empty like scalp
 Find yourself within the void
 God Gamer returns
 
-	SV`,
+	by SV`,
 
 	`fifth poop of the day
 no toilet paper in sight
 Must eat poop to clean
 
-	Palaalia`,
+	by Palaalia`,
 
 	`Upon shining hill,
 Heavens' light blinds the masses,
 No blinds in bald sight.
 
-	simpliv`,
+	by simpliv`,
 
 	`Fresh Unblemished Snow
 From Beneath, a patch of grass
 Upon this bald hill
 
-	piano`,
+	by piano`,
 
 	`waves flow
 always opposing forces
 animation wrong
 
-	icantread`,
+	by icantread`,
 
 	`Borpa cum today
 Borpa no cum tomorrow
 Borpa cum today
 
-	CaptHughJass`,
+	by CaptHughJass`,
 
 	`Words be incoherent 
 The mind fort knox
 I clint eastwood
 
-	icantread`,
+	by icantread`,
 
 
 	`Always wrong you are
 There must always be opposing
 Abaft your self now
 	
-	icantread`,
+	by icantread`,
 
 	`Moon runs in the dark
 Days later, his new best time
 Clint is still faster
 	
-	arufa
+	by arufa
 	Speedrunning Era`,
 
 	`Fantastic cum burst
 An unreal lil pup swallows
 at the perfect pace
 
-	Veloso`,
+	by Veloso`,
 
 	`stupidity known
 Harmonius existence 
 A vasectomy
 
-	socskal`,
+	by socskal`,
 
 	`Ascent to the sky
 Marred by a single mistake
 We begin again
 
-	bundler
+	by bundler
 	"Only Up!" Era`,
 
 	`High dampness baldness
 why a little, mad pup trots
 before today's stream
 
-	Veloso`,
+	by Veloso`,
 
 	`Yells heard from afar
 A man believes he is right
 The hairline recedes
 
-	ඞrufa`,
+	by ඞrufa`,
 
 	`A climb to the peak.
 Have we met the warmth of the sun?
 alas, no curtains
 
-	MormonJeezy`,
+	by MormonJeezy`,
 
 	`I saw this on stream
 I was told to come post here
 Here is my haiku
 
-	Willster`,
+	by Willster`,
 
 	`unsure if farted
 run hand through the ass canyon
 hand comes back wetter
 
-	NannerFone`,
+	by NannerFone`,
 
 	`If chat notices
 Pay tribute to missing PLEAD
 NaM NaM NaM NaM NaM
 
-	ඞrufa`,
+	by ඞrufa`,
 
 	`Bald man yells at chat
 Taunted era begins now
 Let the rage flow free
 
-	Atrick`,
+	by Atrick`,
 
 	`The hot wind blowing
 Jagged Lines across the sand
 The crumbling buildings
 
-	Piano
+	by Piano
 	Metal-Gear-Rising Era`,
 
 	`It never gets old.
 When I see it, I will click.
 Funny purple face.
 
-	showshank`,
+	by showshank`,
 
 	`Meandering thoughts
 The references, bald man
 At the perfect poop
 
-	Kia176`,
+	by Kia176`,
 
 	`Game never done quick
 Bald man climbs the green bean stalk 
 My dad died, cancer
 
-	REFERENCE
+	by REFERENCE
 	"Only Up!" Era`,
 
 	`Tape reads the channel
 He sees twenty three more posts
 Back to janny work
 	
-	Willster`,
+	by Willster`,
 
 	`A darkening moon
 "Listen Chat, Vasectomy"
 A Balding wolf howls.
 
-	Piano`,
+	by Piano`,
 
 	`baldness overwhelms
 the emptiness of no hair
 reflection bright
 
-	Dr Golfer`,
+	by Dr Golfer`,
 
 	`vacation retreat,
 your fans await your visit,
 Moon, come to brazil.
 
-	MormonJeezy`,
+	by MormonJeezy`,
 
 	`metal gear solid
 playing next thursday for stream
 disappointment soon
 
-	Shala`,
+	by Shala`,
 
 	`In jesus' hand
 A lazy baldie runs
 A crypto farm game
 
-	langys
+	by langys
 	"Only Up!" Era`,
 
 	`A puzzle ordeal
 From the land of the red sun
 Countdown to escape
 
-	jesuscar
+	by jesuscar
 	Mario Era`,
 
 	`The snipping of ties
 No more little billies to come
 Peace of mind, at last
 
-	JohnSoulz`,
+	by JohnSoulz`,
 
 	`下痢がある
 トイレ使わず
 刹那主義
 	
-	Florburz`,
+	by Florburz`,
 
 	`Moon sinks out of sight
 A hundred harvests consumed
 Burden borne by mods
 
-	Arufa`,
+	by Arufa`,
 
 	`Claymore in the woods
 Wait for enemy to tread
 Joyful explosion
 
-	Willster
+	by Willster
 	Poopfist Era`,
 
 	`missed the jump, fall far
 a reset is imminent
 back to favela
 
-	Jackrc11
+	by Jackrc11
 	"Only Up!" Era`,
 
 	`Oh, do not look up
 we need to get to the top
 I'm sure we'll make it
 
-	MormonJeezy
+	by MormonJeezy
 	"Only Up!" Era`,
 
 	`Ghost in the corner
 A soulfully green visage
 I hate this camera
 
-	Piano`,
+	by Piano`,
 
 	`No more swimmers swim
 Just a snip and a stitch and done
 No more babies now
 
-	JohnSoulz`,
+	by JohnSoulz`,
 
 	`its named only up
 but bald man keeps on falling
 i am unsubbing
 
-	Magikarp
+	by Magikarp
 	"Only Up!" Era`,
 
 	`An arcane spell chant:
 "Vasecitmous MAXIMUS!"
 The bald wizard's spell
 
-	Piano`,
+	by Piano`,
 
 	`a tumble down low
 escape, main menu, hit play
 time for the guitar
 
-	NannerFone
+	by NannerFone
 	"Only Up!" Era`,
 
 	`Pressure change, a push
 Through a tiny opening, a flow
 Forces move things forth
 
-	JohnSoulz`,
+	by JohnSoulz`,
 
 	`A stupid question
 Vasectomy is shouted
 Prime pleb says taunted
 
-	Weirdough`,
+	by Weirdough`,
 
 	`sun shines from window
 same time each day it blinds chat 
 he will not get blinds
 
-	Jon on Drums`,
+	by Jon on Drums`,
 
 	`it's very hard to
 make a choice when you are not
 sure where it will lead
 
-	MormonJeezy
+	by MormonJeezy
 	"Only Up!" Era`,
 
 	`curious about game
 ask the bald man about it
 my speakers shatter
 
-	NannerFone`,
+	by NannerFone`,
 
 	`Old Snake, last stand
-	The world burns, but he fights on
-	A shadow in the night, a legend
+The world burns, but he fights on
+A shadow in the night, a legend
 	
-	JohnSoulz
+	by JohnSoulz
 	MGS4 Era`,
 
 	`he wont learn ball skip
 he claims it wont save him time
 god hes fucking dumb
 
-	Magikarp
+	by Magikarp
 	"Only Up!" Era`,
 
 	`"Ass or tits?" they ask
 they know not the true answer
 "Hair", moonmoon replies
 
-	SV`,
+	by SV`,
 
 	`A silent toot, then swish
 A warm liquid runs down your leg
 Oh no, not again!
 
-	JohnSoulz`,
+	by JohnSoulz`,
 
 	`submarine missing
 no gamers on the vessel
 should go only up!
 
-	segfault_irl
+	by segfault_irl
 	"Only Up!" Era`,
 
 	`"what is a haiku?"
 i ask Google and then search
 right by accident
 
-	Jackrc11`,
+	by Jackrc11`,
 
 	`Chun Li mah waifu
 Got her to platinum 1
 with Spining Bird Kicks
 
-	Water Boiled Pizza
+	by Water Boiled Pizza
 	SF6 Era`,
 
 	`"Use the beer box moon"
 A chatter poses a tip
 "VASCETOMY!" yelled
 
-	Willster
+	by Willster
 	"My Summer Car" Era`,
 
 	`A shining dome of skin
 A head free to roam the world
 Of hair to worry about
 
-	JohnSoulz`,
+	by JohnSoulz`,
 ]
 for (let i = 0; i < userSubmitted.length; i++) {
 	if (!userSubmitted[i].match(/era$/i)) {
