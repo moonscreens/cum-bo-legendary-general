@@ -459,6 +459,18 @@ Marred by a single mistake
 We begin again
 
 	bundler`,
+
+	`High dampness baldness
+why a little, mad pup trots
+before today's stream
+
+	ඞrufa`,
+
+	`Yells heard from afar
+A man believes he is right
+The hairline recedes
+
+	ඞrufa`,
 ]
 for (let i = 0; i < userSubmitted.length; i++) {
 	userSubmitted[i] = userSubmitted[i] + '\n\t' + randomDate();
