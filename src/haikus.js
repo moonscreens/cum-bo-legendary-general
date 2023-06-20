@@ -447,6 +447,18 @@ An unreal lil pup swallows
 at the perfect pace
 
 	Veloso`
+
+	`stupidity known
+Harmonius existence 
+A vasectomy
+
+	socskal`,
+
+	`Ascent to the sky
+Marred by a single mistake
+We begin again
+
+	bundler`,
 ]
 for (let i = 0; i < userSubmitted.length; i++) {
 	userSubmitted[i] = userSubmitted[i] + '\n\t' + randomDate();
