@@ -555,6 +555,138 @@ playing next thursday for stream
 disappointment soon
 
 	Shala`,
+
+	`In jesus' hand
+A lazy baldie runs
+A crypto farm game
+
+	langys`,
+
+	`A puzzle ordeal
+From the land of the red sun
+Countdown to escape
+
+	jesuscar`,
+
+	`The snipping of ties
+No more little billies to come
+Peace of mind, at last
+
+	JohnSoulz`,
+
+	`下痢がある
+トイレ使わず
+刹那主義
+	
+	Florburz`,
+
+	`Moon sinks out of sight
+A hundred harvests consumed
+Burden borne by mods
+
+	Arufa`,
+
+	`Claymore in the woods
+Wait for enemy to tread
+Joyful explosion
+
+	Willster`,
+
+	`missed the jump, fall far
+a reset is imminent
+back to favela
+
+	Jackrc11`,
+
+	`Oh, do not look up
+we need to get to the top
+I'm sure we'll make it
+
+	MormonJeezy`,
+
+	`Ghost in the corner
+A soulfully green visage
+I hate this camera
+
+	Piano`,
+
+	`No more swimmers swim
+Just a snip and a stitch and done
+No more babies now
+
+	JohnSoulz`,
+
+	`its named only up
+but bald man keeps on falling
+i am unsubbing
+
+	Magikarp`,
+
+	`An arcane spell chant:
+"Vasecitmous MAXIMUS!"
+The bald wizard's spell
+
+	Piano`,
+
+	`a tumble down low
+escape, main menu, hit play
+time for the guitar
+
+	NannerFone`,
+
+	`Pressure change, a push
+Through a tiny opening, a flow
+Forces move things forth
+
+	JohnSoulz`,
+
+	`A stupid question
+Vasectomy is shouted
+Prime pleb says taunted
+
+	Weirdough`,
+
+	`sun shines from window
+same time each day it blinds chat 
+he will not get blinds
+
+	Jon on Drums`,
+
+	`it's very hard to
+make a choice when you are not
+sure where it will lead
+
+	MormonJeezy`,
+
+	`curious about game
+ask the bald man about it
+my speakers shatter
+
+	NannerFone`,
+
+	`Old Snake, last stand
+	The world burns, but he fights on
+	A shadow in the night, a legend
+	
+	JohnSoulz`,
+
+	`he wont learn ball skip
+he claims it wont save him time
+god hes fucking dumb
+
+	Magikarp`,
+
+	`"Ass or tits?" they ask
+they know not the true answer
+"Hair", moonmoon replies
+
+	SV`,
+
+	`A silent toot, then swish
+A warm liquid runs down your leg
+Oh no, not again!
+
+	JohnSoulz`,
 ]
 for (let i = 0; i < userSubmitted.length; i++) {
 	userSubmitted[i] = userSubmitted[i] + '\n\t' + randomDate();
