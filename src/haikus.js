@@ -670,7 +670,7 @@ sure where it will lead
 	by MormonJeezy
 	"Only Up!" Era`,
 
-	`curious about game
+	`wonder about game
 ask the bald man about it
 my speakers shatter
 
