@@ -495,6 +495,36 @@ Pay tribute to missing PLEAD
 NaM NaM NaM NaM NaM
 
 	ඞrufa`,
+
+	`Bald man yells at chat
+Taunted era begins now
+Let the rage flow free
+
+	Atrick`,
+
+	`The hot wind blowing
+Jagged Lines across the sand
+The crumbling buildings
+
+	Piano`,
+
+	`It never gets old.
+When I see it, I will click.
+Funny purple face.
+
+	showshank`,
+
+	`Meandering thoughts
+The references, bald man
+At the perfect poop
+
+	Kia176`,
+
+	`Game never done quick
+Bald man climbs the green bean stalk 
+My dad died, cancer
+
+	REFERENCE`,
 ]
 for (let i = 0; i < userSubmitted.length; i++) {
 	userSubmitted[i] = userSubmitted[i] + '\n\t' + randomDate();
