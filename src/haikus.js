@@ -1,7 +1,31 @@
+function randomDate () {
+	//generates a random date
+
+	const year = Math.floor(Math.random() * 2000);
+
+	const eras = [
+		'Cumbio era',
+		'Pre-Moon era',
+		'Vasectomy rennaissance era',
+		'Post-Vasectomy era',
+		'Stream era',
+		'Post-Stream era',
+		'Chat era',
+		'Post-Chat era',
+		'Emote era',
+		'Post-Emote era',
+	];
+
+	const era = eras[Math.floor(Math.random() * eras.length)];
+
+	return `${year}, ${era}`;
+}
+
+
 const angryAtChat = [
 	`Moonmoon rages fierce,
-	Bald head gleaming in the light,
-	Chat fuels his anger.`,
+Bald head gleaming in the light,
+Chat fuels his anger.`,
 
 	`Twitch chat provokes,
 Fat and bald, Moonmoon seethes,
@@ -45,10 +69,6 @@ const wisdom = [
 Streaming tales of knowledge deep,
 Bald head shines so bright.`,
 
-	`Old and fat he sits,
-Streaming wisdom through the night,
-Moonmoon's radiant.`,
-
 	`Twitch's wise old sage,
 Moonmoon shares his knowledge wide,
 Bald head, thoughts untamed.`,
@@ -56,10 +76,6 @@ Bald head, thoughts untamed.`,
 	`In chat, minds expand,
 Moonmoon's wisdom flows like stream,
 Bald beacon of light.`,
-
-	`A bald moonlight glow,
-Fat and wise, Moonmoon's stream shines,
-Knowledge, a river.`,
 
 	`Stream's currents whisper,
 Moonmoon's wisdom fills the air,
@@ -299,10 +315,6 @@ Emotes light my path.`,
 My bald head shines with wisdom,
 Soulful tales unfold.`,
 
-	`Fat rolls and laughter,
-Through cyberspace, I connect,
-Soulful bonds take shape.`,
-
 	`Moonlight fills my room,
 A streamer's heart beats softly,
 Soulful tunes unite.`,
@@ -327,17 +339,9 @@ Twitch echoes with love.`,
 My soul, a beacon of light,
 Guiding lost wanderers.`,
 
-	`Streaming through the haze,
-A fat, bald streamer's soul soars,
-Entwined with the stars.`,
-
 	`Whispers of my past,
 Streaming soul, bound to the screen,
 Moonmoon's legacy.`,
-
-	`Chips crunch as I play,
-Soulful melodies entwined,
-Echoes through the night.`,
 
 	`Beneath my bald dome,
 Wisdom and passion unite,
@@ -355,10 +359,6 @@ Soul's expression blooms.`,
 Whispering secrets of life,
 Soulful solitude.`,
 
-	`Time marches forward,
-Yet my soul dances timeless,
-Fat man's stream, alive.`,
-
 	`Glasses frame my eyes,
 Reflecting depths of my soul,
 Serenade through streams.`,
@@ -366,18 +366,56 @@ Serenade through streams.`,
 	`Weighty, but buoyant,
 My soul carries me forward,
 Streaming tales of old.`,
-
-	`Bald head, shining bright,
-Embracing my inner light,
-Soul's radiance streams.`
 ]
 
-const combined = [
+
+const userSubmitted = [
+	`teach man to cum
+never hungry
+
+	PersonNo4`,
+
+`Never fear the fall
+Only fear the time you lose
+Another reset
+
+	Morflow`,
+
+`No games to stream now
+Play Metal Gear Solid Four?
+Increase the timer
+
+	Morflow`,
+]
+for (let i = 0; i < userSubmitted.length; i++) {
+	userSubmitted[i] = userSubmitted[i] + '\n\t' + randomDate();
+}
+
+let combined = [
 	...angryAtChat,
 	...wisdom,
 	...advice,
 	...vasectomy,
 	...soulful
+].sort(() => Math.random() - 0.5);
+
+combined = [
+	...userSubmitted,
+	...combined,
 ]
 
-export const haikus = combined.sort(() => Math.random() - 0.5);
+export const haikus = combined;
+
+combined.splice(0,0, 
+	`Submit new haikus,
+Share your wisdom with the stream,
+Subscriber discord.
+
+#arts-and-crafts / #Haiku`);
+
+
+combined.splice(0,0, 
+	`${userSubmitted.length} haikus,
+made by the community,
+number keeps growing.
+`);
