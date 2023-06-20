@@ -440,7 +440,8 @@ Abaft your self now
 Days later, his new best time
 Clint is still faster
 	
-	arufa`,
+	arufa
+	Speedrunning Era`,
 
 	`Fantastic cum burst
 An unreal lil pup swallows
@@ -458,7 +459,8 @@ A vasectomy
 Marred by a single mistake
 We begin again
 
-	bundler`,
+	bundler
+	"Only Up!" Era`,
 
 	`High dampness baldness
 why a little, mad pup trots
@@ -506,7 +508,8 @@ Let the rage flow free
 Jagged Lines across the sand
 The crumbling buildings
 
-	Piano`,
+	Piano
+	Metal-Gear-Rising Era`,
 
 	`It never gets old.
 When I see it, I will click.
@@ -524,7 +527,8 @@ At the perfect poop
 Bald man climbs the green bean stalk 
 My dad died, cancer
 
-	REFERENCE`,
+	REFERENCE
+	"Only Up!" Era`,
 
 	`Tape reads the channel
 He sees twenty three more posts
@@ -560,13 +564,15 @@ disappointment soon
 A lazy baldie runs
 A crypto farm game
 
-	langys`,
+	langys
+	"Only Up!" Era`,
 
 	`A puzzle ordeal
 From the land of the red sun
 Countdown to escape
 
-	jesuscar`,
+	jesuscar
+	Mario Era`,
 
 	`The snipping of ties
 No more little billies to come
@@ -590,19 +596,22 @@ Burden borne by mods
 Wait for enemy to tread
 Joyful explosion
 
-	Willster`,
+	Willster
+	Poopfist Era`,
 
 	`missed the jump, fall far
 a reset is imminent
 back to favela
 
-	Jackrc11`,
+	Jackrc11
+	"Only Up!" Era`,
 
 	`Oh, do not look up
 we need to get to the top
 I'm sure we'll make it
 
-	MormonJeezy`,
+	MormonJeezy
+	"Only Up!" Era`,
 
 	`Ghost in the corner
 A soulfully green visage
@@ -620,7 +629,8 @@ No more babies now
 but bald man keeps on falling
 i am unsubbing
 
-	Magikarp`,
+	Magikarp
+	"Only Up!" Era`,
 
 	`An arcane spell chant:
 "Vasecitmous MAXIMUS!"
@@ -632,7 +642,8 @@ The bald wizard's spell
 escape, main menu, hit play
 time for the guitar
 
-	NannerFone`,
+	NannerFone
+	"Only Up!" Era`,
 
 	`Pressure change, a push
 Through a tiny opening, a flow
@@ -656,7 +667,8 @@ he will not get blinds
 make a choice when you are not
 sure where it will lead
 
-	MormonJeezy`,
+	MormonJeezy
+	"Only Up!" Era`,
 
 	`curious about game
 ask the bald man about it
@@ -668,13 +680,15 @@ my speakers shatter
 	The world burns, but he fights on
 	A shadow in the night, a legend
 	
-	JohnSoulz`,
+	JohnSoulz
+	MGS4 Era`,
 
 	`he wont learn ball skip
 he claims it wont save him time
 god hes fucking dumb
 
-	Magikarp`,
+	Magikarp
+	"Only Up!" Era`,
 
 	`"Ass or tits?" they ask
 they know not the true answer
@@ -687,9 +701,18 @@ A warm liquid runs down your leg
 Oh no, not again!
 
 	JohnSoulz`,
+
+	`submarine missing
+no gamers on the vessel
+should go only up!
+
+	segfault_irl
+	"Only Up!" Era`
 ]
 for (let i = 0; i < userSubmitted.length; i++) {
-	userSubmitted[i] = userSubmitted[i] + '\n\t' + randomDate();
+	if (!userSubmitted[i].match(/era$/i)) {
+		userSubmitted[i] = userSubmitted[i] + '\n\t' + randomDate();
+	}
 }
 
 let combined = [
