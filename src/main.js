@@ -224,7 +224,7 @@ const cumBo = new THREE.Sprite(new THREE.SpriteMaterial({
 	map: new THREE.TextureLoader().load('/cumbo.png'),
 }))
 cumBo.scale.setScalar(900);
-cumBo.position.z = 49;
+cumBo.position.z = 30;
 cumBo.position.x = -600;
 cumBo.position.y = 0;
 cumBo.material.map.colorSpace = THREE.SRGBColorSpace;
