@@ -225,7 +225,7 @@ const cumBo = new THREE.Sprite(new THREE.SpriteMaterial({
 }))
 cumBo.scale.setScalar(900);
 cumBo.position.z = 25;
-cumBo.position.x = -500;
+cumBo.position.x = -600;
 cumBo.position.y = 120;
 cumBo.material.map.colorSpace = THREE.SRGBColorSpace;
 scene.add(cumBo);
