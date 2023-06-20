@@ -391,7 +391,19 @@ Increase the timer
 Find yourself within the void
 God Gamer returns
 
-	SV`
+	SV`,
+
+	`fifth poop of the day
+no toilet paper in sight
+Must eat poop to clean
+
+	Palaalia`,
+
+	`Upon shining hill,
+Heavens' light blinds the masses,
+No blinds in bald sight.
+
+	simpliv`
 ]
 for (let i = 0; i < userSubmitted.length; i++) {
 	userSubmitted[i] = userSubmitted[i] + '\n\t' + randomDate();
