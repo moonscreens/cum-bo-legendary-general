@@ -422,6 +422,12 @@ Borpa no cum tomorrow
 Borpa cum today
 
 	CaptHughJass`,
+
+	`Words be incoherent 
+The mind fort knox
+I clint eastwood
+
+	icantread`
 ]
 for (let i = 0; i < userSubmitted.length; i++) {
 	userSubmitted[i] = userSubmitted[i] + '\n\t' + randomDate();
