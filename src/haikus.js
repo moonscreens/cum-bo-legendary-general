@@ -1,4 +1,4 @@
-function randomDate () {
+function randomDate() {
 	//generates a random date
 
 	const year = Math.floor(Math.random() * 2000);
@@ -375,13 +375,13 @@ never hungry
 
 	PersonNo4`,
 
-`Never fear the fall
+	`Never fear the fall
 Only fear the time you lose
 Another reset
 
 	Morflow`,
 
-`No games to stream now
+	`No games to stream now
 Play Metal Gear Solid Four?
 Increase the timer
 
@@ -410,6 +410,18 @@ From Beneath, a patch of grass
 Upon this bald hill
 
 	piano`,
+
+	`waves flow
+always opposing forces
+animation wrong
+
+	icantread`,
+
+	`Borpa cum today
+Borpa no cum tomorrow
+Borpa cum today
+
+	CaptHughJass`,
 ]
 for (let i = 0; i < userSubmitted.length; i++) {
 	userSubmitted[i] = userSubmitted[i] + '\n\t' + randomDate();
@@ -430,7 +442,7 @@ combined = [
 
 export const haikus = combined;
 
-combined.splice(0,0, 
+combined.splice(0, 0,
 	`Submit new haikus,
 Share your wisdom with the stream,
 Subscriber discord.
@@ -438,7 +450,7 @@ Subscriber discord.
 #arts-and-crafts / #Haiku`);
 
 
-combined.splice(0,0, 
+combined.splice(0, 0,
 	`${userSubmitted.length} haikus,
 made by the community,
 number keeps growing.
