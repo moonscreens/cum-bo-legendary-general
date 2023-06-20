@@ -134,7 +134,7 @@ function draw() {
 
 	cumBo.position.set(
 		Math.sin(Date.now() / 5000 + Math.PI / 2) * 30,
-		Math.sin(Date.now() / 4000) * 30,
+		Math.sin(Date.now() / 4000) * window.innerHeight / 8,
 		0,
 	);
 	cumBo.position.add(cumBo.originPos);
@@ -224,9 +224,9 @@ const cumBo = new THREE.Sprite(new THREE.SpriteMaterial({
 	map: new THREE.TextureLoader().load('/cumbo.png'),
 }))
 cumBo.scale.setScalar(900);
-cumBo.position.z = 25;
+cumBo.position.z = 49;
 cumBo.position.x = -600;
-cumBo.position.y = 120;
+cumBo.position.y = 0;
 cumBo.material.map.colorSpace = THREE.SRGBColorSpace;
 scene.add(cumBo);
 cumBo.originPos = cumBo.position.clone();
