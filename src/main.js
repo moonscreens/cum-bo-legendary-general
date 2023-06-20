@@ -93,6 +93,7 @@ function resize() {
 
 	camera.updateProjectionMatrix();
 	renderer.setSize(window.innerWidth, window.innerHeight);
+	renderer.setPixelRatio(window.devicePixelRatio);
 }
 
 window.addEventListener('DOMContentLoaded', () => {
