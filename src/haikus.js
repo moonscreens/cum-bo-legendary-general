@@ -435,6 +435,18 @@ There must always be opposing
 Abaft your self now
 	
 	icantread`,
+
+	`Moon runs in the dark
+Days later, his new best time
+Clint is still faster
+	
+	arufa`,
+
+	`Fantastic cum burst
+An unreal lil pup swallows
+at the perfect pace
+
+	Veloso`
 ]
 for (let i = 0; i < userSubmitted.length; i++) {
 	userSubmitted[i] = userSubmitted[i] + '\n\t' + randomDate();
