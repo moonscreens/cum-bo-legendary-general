@@ -464,7 +464,7 @@ We begin again
 why a little, mad pup trots
 before today's stream
 
-	ඞrufa`,
+	Veloso`,
 
 	`Yells heard from afar
 A man believes he is right
@@ -525,6 +525,36 @@ Bald man climbs the green bean stalk
 My dad died, cancer
 
 	REFERENCE`,
+
+	`Tape reads the channel
+He sees twenty three more posts
+Back to janny work
+	
+	Willster`,
+
+	`A darkening moon
+"Listen Chat, Vasectomy"
+A Balding wolf howls.
+
+	Piano`,
+
+	`baldness overwhelms
+the emptiness of no hair
+reflection bright
+
+	Dr Golfer`,
+
+	`vacation retreat,
+your fans await your visit,
+Moon, come to brazil.
+
+	MormonJeezy`,
+
+	`metal gear solid
+playing next thursday for stream
+disappointment soon
+
+	Shala`,
 ]
 for (let i = 0; i < userSubmitted.length; i++) {
 	userSubmitted[i] = userSubmitted[i] + '\n\t' + randomDate();
