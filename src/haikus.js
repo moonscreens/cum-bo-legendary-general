@@ -707,7 +707,33 @@ no gamers on the vessel
 should go only up!
 
 	segfault_irl
-	"Only Up!" Era`
+	"Only Up!" Era`,
+
+	`"what is a haiku?"
+i ask Google and then search
+right by accident
+
+	Jackrc11`,
+
+	`Chun Li mah waifu
+Got her to platinum 1
+with Spining Bird Kicks
+
+	Water Boiled Pizza
+	SF6 Era`,
+
+	`"Use the beer box moon"
+A chatter poses a tip
+"VASCETOMY!" yelled
+
+	Willster
+	"My Summer Car" Era`,
+
+	`A shining dome of skin
+A head free to roam the world
+Of hair to worry about
+
+	JohnSoulz`,
 ]
 for (let i = 0; i < userSubmitted.length; i++) {
 	if (!userSubmitted[i].match(/era$/i)) {
