@@ -176,7 +176,7 @@ Nibble on snacks, fuel the grind,
 Keep hunger at bay.`,
 
 	`Sleepless nights, fatigue,
-Rest your weary eyes, dear streamer,
+Rest your weary eyes, streamer,
 Dreams fuel creativity.`,
 
 	`Tips for life's journey,
@@ -427,7 +427,14 @@ Borpa cum today
 The mind fort knox
 I clint eastwood
 
-	icantread`
+	icantread`,
+
+
+	`Always wrong you are
+There must always be opposing
+Abaft your self now
+	
+	icantread`,
 ]
 for (let i = 0; i < userSubmitted.length; i++) {
 	userSubmitted[i] = userSubmitted[i] + '\n\t' + randomDate();
