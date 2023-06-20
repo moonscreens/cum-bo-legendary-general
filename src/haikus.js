@@ -471,6 +471,18 @@ A man believes he is right
 The hairline recedes
 
 	ඞrufa`,
+
+	`A climb to the peak.
+Have we met the warmth of the sun?
+alas, no curtains
+
+	MormonJeezy`,
+
+	`I saw this on stream
+I was told to come post here
+Here is my haiku
+
+	Willster`,
 ]
 for (let i = 0; i < userSubmitted.length; i++) {
 	userSubmitted[i] = userSubmitted[i] + '\n\t' + randomDate();
