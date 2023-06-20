@@ -403,7 +403,13 @@ Must eat poop to clean
 Heavens' light blinds the masses,
 No blinds in bald sight.
 
-	simpliv`
+	simpliv`,
+
+	`Fresh Unblemished Snow
+From Beneath, a patch of grass
+Upon this bald hill
+
+	piano`,
 ]
 for (let i = 0; i < userSubmitted.length; i++) {
 	userSubmitted[i] = userSubmitted[i] + '\n\t' + randomDate();
