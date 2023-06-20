@@ -483,6 +483,18 @@ I was told to come post here
 Here is my haiku
 
 	Willster`,
+
+	`unsure if farted
+run hand through the ass canyon
+hand comes back wetter
+
+	NannerFone`,
+
+	`If chat notices
+Pay tribute to missing PLEAD
+NaM NaM NaM NaM NaM
+
+	ඞrufa`,
 ]
 for (let i = 0; i < userSubmitted.length; i++) {
 	userSubmitted[i] = userSubmitted[i] + '\n\t' + randomDate();
