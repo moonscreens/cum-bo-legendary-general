@@ -276,10 +276,10 @@ const wave_material = new THREE.ShaderMaterial({
 
 		void main() {
 			gl_FragColor = texture2D(wave_texture,
-				vec2(vUv.x * (waveCount/4.0) + time * 0.3 + waveOffset, vUv.y)
+				vec2(vUv.x * (waveCount/4.5) + waveOffset + (time) * 0.3, vUv.y)
 			);
 
-			gl_FragColor.rgb *= .8 + (1.0 - waveOffset)*0.3;
+			gl_FragColor.rgb *= .8 + (1.0 - waveOffset) * 0.3;
 		}
 	`,
 });
