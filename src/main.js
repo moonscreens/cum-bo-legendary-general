@@ -348,7 +348,7 @@ async function haikuFunction() {
 	haikuIndex++;
 	if (haikuIndex >= haikus.length) haikuIndex = 0;
 
-	await new Promise(r => setTimeout(r, 10000));
+	await new Promise(r => setTimeout(r, 1000));
 
 	const haiku = haikus[haikuIndex];
 	haikuContainer.textContent = '';
@@ -360,6 +360,6 @@ async function haikuFunction() {
 	processingHaiku = false;
 };
 
-setInterval(haikuFunction, 25000);
+setInterval(haikuFunction, 20000);
 
 haikuFunction();
