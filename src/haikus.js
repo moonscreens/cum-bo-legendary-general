@@ -734,6 +734,12 @@ A head free to roam the world
 Of hair to worry about
 
 	by JohnSoulz`,
+
+	`the young one wakes up
+who does he see before him?
+a banana head
+
+	by Jesuscar`,
 ]
 for (let i = 0; i < userSubmitted.length; i++) {
 	if (!userSubmitted[i].match(/era$/i)) {
