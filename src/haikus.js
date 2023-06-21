@@ -812,3 +812,11 @@ For right syllables
 
 	by Arufa
 `);
+
+
+combined.splice(0, 0,
+	`Animation made by Tape
+
+	Cum Bo drawn by Tacos
+
+		Community grown by moon`);
