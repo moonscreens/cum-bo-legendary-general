@@ -804,7 +804,11 @@ Find thread in:
 
 
 combined.splice(0, 0,
-	`${userSubmitted.length} haikus,
-made by the community,
-number keeps growing.
+	`${userSubmitted.length} haikus
+
+Too many haikus
+Made by the community
+For right syllables
+
+	by Arufa
 `);
