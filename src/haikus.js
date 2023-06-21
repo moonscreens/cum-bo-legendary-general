@@ -740,6 +740,26 @@ who does he see before him?
 a banana head
 
 	by Jesuscar`,
+
+	`We gaze down and think,
+"How high a climb it has been"
+To brazil, we came.
+
+	by CaptHughJass
+	"Only Up!" Era`,
+
+	`cock and ball torture
+what a fun activity
+okay here I go
+
+	By MeActually`,
+
+	`head of a porpoise
+puzzles confuse the old brain
+still loading; tortoise
+
+	by 2z,
+	"Only Up!" Era`,
 ]
 for (let i = 0; i < userSubmitted.length; i++) {
 	if (!userSubmitted[i].match(/era$/i)) {
