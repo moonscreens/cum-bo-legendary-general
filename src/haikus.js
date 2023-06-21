@@ -760,6 +760,18 @@ still loading; tortoise
 
 	by 2z,
 	"Only Up!" Era`,
+
+	`the thinking man's snack
+yes, salt and vinegar chips
+want barbeque, billy?
+
+	by Jesuscar`,
+
+	`Sack stuck on the thigh
+Time for private adjustment
+That's so much better
+
+	by CaptHughJass`,
 ]
 for (let i = 0; i < userSubmitted.length; i++) {
 	if (!userSubmitted[i].match(/era$/i)) {
