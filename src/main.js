@@ -114,12 +114,12 @@ function draw() {
 	const delta = Math.min(1, Math.max(0, (performance.now() - lastFrame) / 1000));
 	lastFrame = performance.now();
 
-	const despawn = (window.innerWidth / 2) * 1.1;
+	const despawn = -(window.innerWidth / 2) * 1.1;
 
 	for (let index = sceneEmoteArray.length - 1; index >= 0; index--) {
 		const element = sceneEmoteArray[index];
-		element.position.x += delta * 150 * (element.r2 / 2 + 0.5);
-		if (element.position.x > despawn) {
+		element.position.x -= delta * 150 * (element.r2 / 2 + 0.5);
+		if (element.position.x < despawn) {
 			sceneEmoteArray.splice(index, 1);
 			scene.remove(element);
 		} else {
@@ -134,11 +134,11 @@ function draw() {
 
 	cumBo.position.set(
 		Math.sin(Date.now() / 5000 + Math.PI / 2) * 30,
-		Math.sin(Date.now() / 4000) * window.innerHeight / 8,
+		Math.sin(Date.now() / 2000) * 60,
 		0,
 	);
 	cumBo.position.add(cumBo.originPos);
-	cumBo.material.rotation = Math.sin(Date.now() / 11000) * 0.1;
+	cumBo.material.rotation = Math.sin(Date.now() / 7000) * 0.2;
 
 	renderer.render(scene, camera);
 	if (stats) stats.end();
@@ -225,8 +225,8 @@ const cumBo = new THREE.Sprite(new THREE.SpriteMaterial({
 }))
 cumBo.scale.setScalar(900);
 cumBo.position.z = 30;
-cumBo.position.x = -600;
-cumBo.position.y = 0;
+cumBo.position.x = -550;
+cumBo.position.y = 100;
 cumBo.material.map.colorSpace = THREE.SRGBColorSpace;
 scene.add(cumBo);
 cumBo.originPos = cumBo.position.clone();
@@ -256,12 +256,12 @@ const wave_material = new THREE.ShaderMaterial({
 
 			vec4 pos = projectionMatrix * modelViewMatrix * instanceMatrix * vec4(position, 1.0);
 			if (uv.y > 0.0) {
-				float offset = instanceColor.x * 25.0 - ((instanceColor.x * 3.14 + time * 0.2) * 2.0);
+				float offset = instanceColor.x * 25.0 - ((instanceColor.x * 3.14 - time * 0.2) * 2.0);
 				waveOffset = instanceColor.x;
 				float distanceScale =instanceColor.x * 0.5 + 0.5;
 				float wave = (uv.x * (waveCount / distanceScale)) + offset;
 				float waveScale = waveHeight * distanceScale;
-				pos.y += (sin(wave) + sin(instanceColor.x * 5.0 - time) * 0.25) * waveScale;
+				pos.y += (sin(wave) + sin(instanceColor.x * 5.0 + time) * 0.25) * waveScale;
 			}
 			gl_Position = pos;
 
@@ -276,7 +276,7 @@ const wave_material = new THREE.ShaderMaterial({
 
 		void main() {
 			gl_FragColor = texture2D(wave_texture,
-				vec2(vUv.x * (waveCount/4.5) - (time) * 0.3, vUv.y)
+				vec2(vUv.x * (waveCount/4.5) + (time) * 0.3, vUv.y)
 			);
 
 			gl_FragColor.rgb *= .8 + (1.0 - waveOffset) * 0.3;
@@ -311,7 +311,7 @@ function waveResize() {
 	for (let i = 0; i < emoteSpawns.length; i++) {
 		const spawn = emoteSpawns[i];
 		spawn.pos.z = spawn.index * 50 + 0.01;
-		spawn.pos.x = (-window.innerWidth / 2) * 1.1;
+		spawn.pos.x = (window.innerWidth / 2) * 1.2;
 		spawn.pos.y = wave_instance.position.y + (spawn.height + 0.4) * wave_instance.scale.y;
 	}
 
