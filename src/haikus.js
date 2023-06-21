@@ -787,7 +787,8 @@ combined.splice(0, 0,
 Share your wisdom with the stream,
 Subscriber discord.
 
-#arts-and-crafts / #Haiku`);
+Find thread in:
+#arts-and-crafts > #Haiku`);
 
 
 combined.splice(0, 0,
