@@ -253,22 +253,20 @@ const wave_material = new THREE.ShaderMaterial({
 		varying float waveOffset;
 		void main() {
 			vUv = uv;
-
 			vec4 pos = projectionMatrix * modelViewMatrix * instanceMatrix * vec4(position, 1.0);
 			if (uv.y > 0.0) {
 				waveOffset = instanceColor.x;
-				float offset = waveOffset * 25.0 + (waveOffset * time * 1.5);
+				float timeOffset = sin(waveOffset * 3.14 * 2.0) * 0.1 + (time * 1.5);
+				timeOffset += sin(waveOffset * 3.14 * 2.0 + time * 0.1) * 5.;
 				float distanceScale = waveOffset * 0.5 + 0.5;
-				float wave = (uv.x * (waveCount / distanceScale)) + offset;
+				float wave = (uv.x * (waveCount / distanceScale)) + timeOffset + waveOffset * 19.0;
 				float waveScale = waveHeight * distanceScale;
-				pos.y += (sin(wave) + sin(waveOffset * 5.0 + time) * 0.25) * waveScale;
+				pos.y += sin(wave) * waveScale;
 			}
 			gl_Position = pos;
-
 		}
 	`,
 	fragmentShader: /*glsl*/`
-		uniform float time;
 		uniform sampler2D wave_texture;
 		uniform float waveCount;
 		varying vec2 vUv;
@@ -276,7 +274,7 @@ const wave_material = new THREE.ShaderMaterial({
 
 		void main() {
 			gl_FragColor = texture2D(wave_texture,
-				vec2(vUv.x * (waveCount/4.5) + (time) * 0.4, vUv.y)
+				vec2(vUv.x * (waveCount/4.5), vUv.y)
 			);
 
 			gl_FragColor.rgb *= .8 + (1.0 - waveOffset) * 0.3;
