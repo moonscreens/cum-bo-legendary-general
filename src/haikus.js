@@ -851,6 +851,25 @@ This man reproduced
 
 ${authorStart} NeatoBurrito`,
 
+	`It's curious how
+People with so called "free will"
+All post the same thing
+
+${authorStart} Willster`,
+
+	`FishMoley Looking
+Woah, that is a bigass fish
+What if I spam it?
+
+${authorStart} Willster`,
+
+	`Sub thirty minutes
+Even did the dragon skip
+Dumbass still beefed it
+
+${authorStart} Mars
+	"Only Up!" Era`,
+
 	`"Play with x streamer" 
 Posts same message for hours
 Timed out for three weeks
