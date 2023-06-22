@@ -792,6 +792,12 @@ Bald Man sits down to start stream
 HDMI lost
 
 	by Piano`,
+
+	`Green frog cries and scream,
+Social understanding lost,
+Incorect usage.
+
+	by a random pepoYELL fan`
 ]
 for (let i = 0; i < userSubmitted.length; i++) {
 	if (!userSubmitted[i].match(/era$/i)) {
