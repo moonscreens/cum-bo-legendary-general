@@ -814,6 +814,24 @@ The streamer is unaware,
 Soon the man will know
 
 ${authorStart} Willster`
+
+		`I see a NaM post
+I too, am compelled to post
+Real ones go for 10
+
+${authorStart} Willster`,
+
+	`Ten minute timeout
+Use that time to meditate
+Reflect on the NaM
+
+${authorStart} SV`,
+
+	`Bald man makes coffee 
+Stupid gifs cover our screen
+Mods are not funny
+
+${authorStart} Mars`,
 ]
 for (let i = 0; i < userSubmitted.length; i++) {
 	if (!userSubmitted[i].match(/era$/i)) {
