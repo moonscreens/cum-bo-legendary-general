@@ -831,7 +831,7 @@ ${authorStart} SV`,
 Stupid gifs cover our screen
 Mods are not funny
 
-${authorStart} Mars`,
+${authorStart} NeatoBurrito`,
 
 	`"Time for a break"
 Refrigerator Magnets
@@ -843,19 +843,19 @@ ${authorStart} Piano`,
 Streamer does not entertain
 At least not bean chug
 
-${authorStart} Mars`,
+${authorStart} NeatoBurrito`,
 
 	`He tries to mock pleb
 "vowels may not be adjoining"
 This man reproduced
 
-${authorStart} Mars`,
+${authorStart} NeatoBurrito`,
 
 	`"Play with x streamer" 
 Posts same message for hours
 Timed out for three weeks
 
-${authorStart} Mars`,
+${authorStart} NeatoBurrito`,
 
 ]
 for (let i = 0; i < userSubmitted.length; i++) {
