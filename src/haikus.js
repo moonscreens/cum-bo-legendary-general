@@ -799,13 +799,21 @@ ${authorStart} Piano`,
 Social understanding lost,
 Incorect usage.
 
-${authorStart} a random pepoYELL fan`,
+${authorStart} a random pepoYELL fan
+	Emote Era`,
 
 	`streamer losing hope
 pe po yell for morale boost
 it will never work
 
-${authorStart} NannerFone`,
+${authorStart} NannerFone
+	Emote Era`,
+
+	`PEPW post
+The streamer is unaware
+Soon the man will know
+
+${authorStart} Willster`
 ]
 for (let i = 0; i < userSubmitted.length; i++) {
 	if (!userSubmitted[i].match(/era$/i)) {
