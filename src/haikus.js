@@ -845,6 +845,12 @@ At least not bean chug
 
 ${authorStart} Mars`,
 
+`He tries to mock pleb
+"vowels may not be adjoining"
+This man reproduced
+
+${authorStart} Mars`,
+
 ]
 for (let i = 0; i < userSubmitted.length; i++) {
 	if (!userSubmitted[i].match(/era$/i)) {
