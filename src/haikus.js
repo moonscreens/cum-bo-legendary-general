@@ -1,3 +1,5 @@
+const authorStart = '\twritten by';
+
 function randomDate() {
 	//generates a random date
 
@@ -373,7 +375,7 @@ const userSubmitted = [
 	`teach man to cum
 never hungry
 
-	by PersonNo4`,
+${authorStart} PersonNo4`,
 
 	`Never fear the fall
 Only fear the time you lose
@@ -385,419 +387,419 @@ Another reset
 Play Metal Gear Solid Four?
 Increase the timer
 
-	by Morflow`,
+${authorStart} Morflow`,
 
 	`Head empty like scalp
 Find yourself within the void
 God Gamer returns
 
-	by SV`,
+${authorStart} SV`,
 
 	`fifth poop of the day
 no toilet paper in sight
 Must eat poop to clean
 
-	by Palaalia`,
+${authorStart} Palaalia`,
 
 	`Upon shining hill,
 Heavens' light blinds the masses,
 No blinds in bald sight.
 
-	by simpliv`,
+${authorStart} simpliv`,
 
 	`Fresh Unblemished Snow
 From Beneath, a patch of grass
 Upon this bald hill
 
-	by piano`,
+${authorStart} piano`,
 
 	`waves flow
 always opposing forces
 animation wrong
 
-	by icantread`,
+${authorStart} icantread`,
 
 	`Borpa cum today
 Borpa no cum tomorrow
 Borpa cum today
 
-	by CaptHughJass`,
+${authorStart} CaptHughJass`,
 
 	`Words be incoherent 
 The mind fort knox
 I clint eastwood
 
-	by icantread`,
+${authorStart} icantread`,
 
 
 	`Always wrong you are
 There must always be opposing
 Abaft your self now
 	
-	by icantread`,
+${authorStart} icantread`,
 
 	`Moon runs in the dark
 Days later, his new best time
 Clint is still faster
 	
-	by arufa
+${authorStart} arufa
 	Speedrunning Era`,
 
 	`Fantastic cum burst
 An unreal lil pup swallows
 at the perfect pace
 
-	by Veloso`,
+${authorStart} Veloso`,
 
 	`stupidity known
 Harmonius existence 
 A vasectomy
 
-	by socskal`,
+${authorStart} socskal`,
 
 	`Ascent to the sky
 Marred by a single mistake
 We begin again
 
-	by bundler
+${authorStart} bundler
 	"Only Up!" Era`,
 
 	`High dampness baldness
 why a little, mad pup trots
 before today's stream
 
-	by Veloso`,
+${authorStart} Veloso`,
 
 	`Yells heard from afar
 A man believes he is right
 The hairline recedes
 
-	by ඞrufa`,
+${authorStart} ඞrufa`,
 
 	`A climb to the peak.
 Have we met the warmth of the sun?
 alas, no curtains
 
-	by MormonJeezy`,
+${authorStart} MormonJeezy`,
 
 	`I saw this on stream
 I was told to come post here
 Here is my haiku
 
-	by Willster`,
+${authorStart} Willster`,
 
 	`unsure if farted
 run hand through the ass canyon
 hand comes back wetter
 
-	by NannerFone`,
+${authorStart} NannerFone`,
 
 	`If chat notices
 Pay tribute to missing PLEAD
 NaM NaM NaM NaM NaM
 
-	by ඞrufa`,
+${authorStart} ඞrufa`,
 
 	`Bald man yells at chat
 Taunted era begins now
 Let the rage flow free
 
-	by Atrick`,
+${authorStart} Atrick`,
 
 	`The hot wind blowing
 Jagged Lines across the sand
 The crumbling buildings
 
-	by Piano
+${authorStart} Piano
 	Metal-Gear-Rising Era`,
 
 	`It never gets old.
 When I see it, I will click.
 Funny purple face.
 
-	by showshank`,
+${authorStart} showshank`,
 
 	`Meandering thoughts
 The references, bald man
 At the perfect poop
 
-	by Kia176`,
+${authorStart} Kia176`,
 
 	`Game never done quick
 Bald man climbs the green bean stalk 
 My dad died, cancer
 
-	by REFERENCE
+${authorStart} REFERENCE
 	"Only Up!" Era`,
 
 	`Tape reads the channel
 He sees twenty three more posts
 Back to janny work
 	
-	by Willster`,
+${authorStart} Willster`,
 
 	`A darkening moon
 "Listen Chat, Vasectomy"
 A Balding wolf howls.
 
-	by Piano`,
+${authorStart} Piano`,
 
 	`baldness overwhelms
 the emptiness of no hair
 reflection bright
 
-	by Dr Golfer`,
+${authorStart} Dr Golfer`,
 
 	`vacation retreat,
 your fans await your visit,
 Moon, come to brazil.
 
-	by MormonJeezy`,
+${authorStart} MormonJeezy`,
 
 	`metal gear solid
 playing next thursday for stream
 disappointment soon
 
-	by Shala`,
+${authorStart} Shala`,
 
 	`In jesus' hand
 A lazy baldie runs
 A crypto farm game
 
-	by langys
+${authorStart} langys
 	"Only Up!" Era`,
 
 	`A puzzle ordeal
 From the land of the red sun
 Countdown to escape
 
-	by jesuscar
+${authorStart} jesuscar
 	Mario Era`,
 
 	`The snipping of ties
 No more little billies to come
 Peace of mind, at last
 
-	by JohnSoulz`,
+${authorStart} JohnSoulz`,
 
 	`下痢がある
 トイレ使わず
 刹那主義
 	
-	by Florburz`,
+${authorStart} Florburz`,
 
 	`Moon sinks out of sight
 A hundred harvests consumed
 Burden borne by mods
 
-	by Arufa`,
+${authorStart} Arufa`,
 
 	`Claymore in the woods
 Wait for enemy to tread
 Joyful explosion
 
-	by Willster
+${authorStart} Willster
 	Poopfist Era`,
 
 	`missed the jump, fall far
 a reset is imminent
 back to favela
 
-	by Jackrc11
+${authorStart} Jackrc11
 	"Only Up!" Era`,
 
 	`Oh, do not look up
 we need to get to the top
 I'm sure we'll make it
 
-	by MormonJeezy
+${authorStart} MormonJeezy
 	"Only Up!" Era`,
 
 	`Ghost in the corner
 A soulfully green visage
 I hate this camera
 
-	by Piano`,
+${authorStart} Piano`,
 
 	`No more swimmers swim
 Just a snip and a stitch and done
 No more babies now
 
-	by JohnSoulz`,
+${authorStart} JohnSoulz`,
 
 	`its named only up
 but bald man keeps on falling
 i am unsubbing
 
-	by Magikarp
+${authorStart} Magikarp
 	"Only Up!" Era`,
 
 	`An arcane spell chant:
 "Vasecitmous MAXIMUS!"
 The bald wizard's spell
 
-	by Piano`,
+${authorStart} Piano`,
 
 	`a tumble down low
 escape, main menu, hit play
 time for the guitar
 
-	by NannerFone
+${authorStart} NannerFone
 	"Only Up!" Era`,
 
 	`Pressure change, a push
 Through a tiny opening, a flow
 Forces move things forth
 
-	by JohnSoulz`,
+${authorStart} JohnSoulz`,
 
 	`A stupid question
 Vasectomy is shouted
 Prime pleb says taunted
 
-	by Weirdough`,
+${authorStart} Weirdough`,
 
 	`sun shines from window
 same time each day it blinds chat 
 he will not get blinds
 
-	by Jon on Drums`,
+${authorStart} Jon on Drums`,
 
 	`it's very hard to
 make a choice when you are not
 sure where it will lead
 
-	by MormonJeezy
+${authorStart} MormonJeezy
 	"Only Up!" Era`,
 
 	`wonder about game
 ask the bald man about it
 my speakers shatter
 
-	by NannerFone`,
+${authorStart} NannerFone`,
 
 	`Old Snake, last stand
 The world burns, but he fights on
 A shadow in the night, a legend
 	
-	by JohnSoulz
+${authorStart} JohnSoulz
 	MGS4 Era`,
 
 	`he wont learn ball skip
 he claims it wont save him time
 god hes fucking dumb
 
-	by Magikarp
+${authorStart} Magikarp
 	"Only Up!" Era`,
 
 	`"Ass or tits?" they ask
 they know not the true answer
 "Hair", moonmoon replies
 
-	by SV`,
+${authorStart} SV`,
 
 	`A silent toot, then swish
 A warm liquid runs down your leg
 Oh no, not again!
 
-	by JohnSoulz`,
+${authorStart} JohnSoulz`,
 
 	`submarine missing
 no gamers on the vessel
 should go only up!
 
-	by segfault_irl
+${authorStart} segfault_irl
 	"Only Up!" Era`,
 
 	`"what is a haiku?"
 i ask Google and then search
 right by accident
 
-	by Jackrc11`,
+${authorStart} Jackrc11`,
 
 	`Chun Li mah waifu
 Got her to platinum 1
 with Spining Bird Kicks
 
-	by Water Boiled Pizza
+${authorStart} Water Boiled Pizza
 	SF6 Era`,
 
 	`"Use the beer box moon"
 A chatter poses a tip
 "VASCETOMY!" yelled
 
-	by Willster
+${authorStart} Willster
 	"My Summer Car" Era`,
 
 	`A shining dome of skin
 A head free to roam the world
 Of hair to worry about
 
-	by JohnSoulz`,
+${authorStart} JohnSoulz`,
 
 	`the young one wakes up
 who does he see before him?
 a banana head
 
-	by Jesuscar`,
+${authorStart} Jesuscar`,
 
 	`We gaze down and think,
 "How high a climb it has been"
 To brazil, we came.
 
-	by CaptHughJass
+${authorStart} CaptHughJass
 	"Only Up!" Era`,
 
 	`cock and ball torture
 what a fun activity
 okay here I go
 
-	By MeActually`,
+${authorStart} MeActually`,
 
 	`head of a porpoise
 puzzles confuse the old brain
 still loading; tortoise
 
-	by 2z,
+${authorStart} 2z,
 	"Only Up!" Era`,
 
 	`the thinking man's snack
 yes, salt and vinegar chips
 want barbeque, billy?
 
-	by Jesuscar`,
+${authorStart} Jesuscar`,
 
 	`Sack stuck on the thigh
 Time for private adjustment
 That's so much better
 
-	by CaptHughJass`,
+${authorStart} CaptHughJass`,
 
 	`The nerd condemns nerds
 Adhesive losing its grip
 Tape shut the fuck up
 
-	by Arufa
+${authorStart} Arufa
 	Cyberbully Era`,
 
 	`Bald man tries his best
 But Timer does not go down
 It goes only up
 
-	by Winkyface
+${authorStart} Winkyface
 	"Only Up!" Era`,
 
 	`A grim prediction
 Bald Man sits down to start stream
 HDMI lost
 
-	by Piano`,
+${authorStart} Piano`,
 
 	`Green frog cries and scream,
 Social understanding lost,
 Incorect usage.
 
-	by a random pepoYELL fan`
+${authorStart} a random pepoYELL fan`
 ]
 for (let i = 0; i < userSubmitted.length; i++) {
 	if (!userSubmitted[i].match(/era$/i)) {
@@ -836,7 +838,7 @@ Too many haikus
 Made by the community
 For right syllables
 
-	by Arufa
+${authorStart} Arufa
 `);
 
 
