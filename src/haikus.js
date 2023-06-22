@@ -883,5 +883,5 @@ Too many haikus
 Made by the community
 For right syllables
 
-${authorStart} Arufa
+this haiku written by Arufa
 `);
