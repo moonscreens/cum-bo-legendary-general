@@ -809,8 +809,8 @@ it will never work
 ${authorStart} NannerFone
 	Emote Era`,
 
-	`PEPW post
-The streamer is unaware
+	`Pep-double-u post,
+The streamer is unaware,
 Soon the man will know
 
 ${authorStart} Willster`
