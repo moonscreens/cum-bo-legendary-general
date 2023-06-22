@@ -772,6 +772,26 @@ Time for private adjustment
 That's so much better
 
 	by CaptHughJass`,
+
+	`The nerd condemns nerds
+Adhesive losing its grip
+Tape shut the fuck up
+
+	by Arufa
+	Cyberbully Era`,
+
+	`Bald man tries his best
+But Timer does not go down
+It goes only up
+
+	by Winkyface
+	"Only Up!" Era`,
+
+	`A grim prediction
+Bald Man sits down to start stream
+HDMI lost
+
+	by Piano`,
 ]
 for (let i = 0; i < userSubmitted.length; i++) {
 	if (!userSubmitted[i].match(/era$/i)) {
