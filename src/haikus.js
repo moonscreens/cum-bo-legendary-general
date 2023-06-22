@@ -813,9 +813,9 @@ ${authorStart} NannerFone
 The streamer is unaware,
 Soon the man will know
 
-${authorStart} Willster`
+${authorStart} Willster`,
 
-		`I see a NaM post
+	`I see a NaM post
 I too, am compelled to post
 Real ones go for 10
 
@@ -832,6 +832,13 @@ Stupid gifs cover our screen
 Mods are not funny
 
 ${authorStart} Mars`,
+
+	`"Time for a break"
+Refrigerator Magnets
+Entertain the chat
+
+${authorStart} Piano`,
+
 ]
 for (let i = 0; i < userSubmitted.length; i++) {
 	if (!userSubmitted[i].match(/era$/i)) {
