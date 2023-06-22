@@ -839,6 +839,12 @@ Entertain the chat
 
 ${authorStart} Piano`,
 
+	`No Henry for weeks
+Streamer does not entertain
+At least not bean chug
+
+${authorStart} Mars`,
+
 ]
 for (let i = 0; i < userSubmitted.length; i++) {
 	if (!userSubmitted[i].match(/era$/i)) {
