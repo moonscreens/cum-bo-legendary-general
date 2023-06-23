@@ -888,6 +888,12 @@ The vaccination abaft
 
 ${authorStart} ValkyrTankyr`,
 
+`A former exile
+Aquatic, large, and lumpy
+Observe FishMoley
+
+${authorStart} jesuscar`,
+
 ]
 for (let i = 0; i < userSubmitted.length; i++) {
 	if (!userSubmitted[i].match(/era$/i)) {
