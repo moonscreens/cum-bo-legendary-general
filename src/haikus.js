@@ -876,6 +876,18 @@ Timed out for three weeks
 
 ${authorStart} NeatoBurrito`,
 
+`I post cringe in chat
+Bring great shame to family
+Impending exile
+
+${authorStart} ValkyrTankyr`,
+
+`Old Scholar Play Mario
+Level hard lose many life
+The vaccination abaft
+
+${authorStart} ValkyrTankyr`,
+
 ]
 for (let i = 0; i < userSubmitted.length; i++) {
 	if (!userSubmitted[i].match(/era$/i)) {
