@@ -894,6 +894,55 @@ Observe FishMoley
 
 ${authorStart} jesuscar`,
 
+`Off_topic degens
+Sit in dark mother's basement
+They have no bitches
+
+${authorStart} emily`,
+
+`badlands does a chug
+beans regurgitate on me
+I am disgusted
+
+${authorStart} Naomi Luna`,
+
+`not a hair in sight
+fake wife, fake kid, fake dog too
+this is my streamer
+
+${authorStart} blarkle`,
+
+`Fat, shit, bald and old
+Cant finish a single game
+What a fucking bitch
+
+${authorStart} emily`,
+
+`Cock Cock Cock Cock Cock
+Cum Cum Cum Cum Cum Cum Cum
+Borpa spin for cum
+
+${authorStart} Mora`,
+
+`Checking the stream chat
+Endless stream of taunting jabs
+The bald man cries out
+
+${authorStart} Jimmy Large`,
+
+`chat scrolling on screen
+bald man sits in the corner
+did not read my sub
+
+${authorStart} blarkle`,
+
+`GTA RP
+Yung Dab tearing up the streets
+xQc malds hard
+
+${authorStart} emily
+	Rollplay Era`,
+
 ]
 for (let i = 0; i < userSubmitted.length; i++) {
 	if (!userSubmitted[i].match(/era$/i)) {
