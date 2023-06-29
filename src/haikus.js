@@ -943,6 +943,132 @@ xQc malds hard
 ${authorStart} emily
 	Rollplay Era`,
 
+`large breasts on the screen
+magnificent orbs of flesh
+type and send "BOOBA"
+
+${authorStart} Kerball`,
+
+`NaM NaM NaM NaM NaM 
+NaM NaM NaM NaM NaM NaM NaM 
+NaM NaM NaM NaM NaM
+
+${authorStart} Kerball`,
+
+`tractor flipped over
+chat chimes in with their best help
+please grab the beer box
+
+${authorStart} NannerFone`,
+
+`hopeful moonmoon
+a bad final fantasy
+makes a mad baldy
+
+${authorStart} Langis`,
+
+`I hate every game
+Joy left me with my hairline
+My wife is not real
+
+${authorStart} Lord Youngbull`,
+
+`moonmoon do kegels
+just tighten that pelvic floor
+a healthy pasttime
+
+${authorStart} KegelKing`,
+
+`The Moon rises late 
+The Sun reflects on its face 
+The Moon sets early
+
+${authorStart} Phil T`,
+
+`tag peacefulhaley
+call her a big stinky nerd
+eff you haley <farts>
+
+${authorStart} Kegel King`,
+
+`Hello Nerevar
+Time to ride a Silt Strider
+Play Morrowind Now
+
+${authorStart} Jake`,
+
+`Microwave coffee 
+Is the only way to go
+If you have shit taste
+
+${authorStart} Lord Youngbull`,
+
+`I eat sushi
+No dip soy sauce
+Right way to eat
+
+${authorStart} BetterWithButter`,
+
+`When coffee is cold,
+Microwave brings back its warmth,
+Artisanal taste
+
+${authorStart} Guru`,
+
+`Moonmoon play yakuza 0
+karaoke, disco and minigames
+much fun you will have!
+
+${authorStart} Haley`,
+
+`Lots of you guys suck
+at correctly making a
+haiku to put here
+
+${authorStart} Willster`,
+
+`Will never go down
+Another night spent on couch
+Horny and alone
+
+${authorStart} SimplyStin`,
+
+`disheveled, yelling
+"DO I LOOK LIKE A PSYCHO"
+i fear for my life
+
+${authorStart} NannerFone`,
+
+`playing vr game
+disappointment all over
+nothing like boneworks
+
+${authorStart} NannerFone`,
+
+`Bald head, glasses aglow,
+Metal Gear solid soon
+Copium for all.
+
+${authorStart} Betwobbly`,
+
+`ask moon 'when rimworld?'
+bully him into playing
+rimworld streams are great
+
+${authorStart} KegelKing`,
+
+`Ask my opinion
+I will tell you honestly
+Never reproduce
+
+${authorStart} Excalibur_Z`,
+
+`two things in common
+big tits and sweaty armpits
+MOONMOON and Tifa
+
+${authorStart} mcappy`,
+
 ]
 for (let i = 0; i < userSubmitted.length; i++) {
 	if (!userSubmitted[i].match(/era$/i)) {
