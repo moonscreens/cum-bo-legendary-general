@@ -1069,6 +1069,89 @@ MOONMOON and Tifa
 
 ${authorStart} mcappy`,
 
+`Like warm morning rain
+A breath of fresh air at dawn
+Hot pee in my ass
+
+${authorStart} Yungbull`,
+
+`Moon drinks the coffee
+Provocative green frog man
+Break is imminent
+
+${authorStart} Zoul`,
+
+`Waiting in Cutscene
+Skip All of the Dialog
+Final Fantasy
+
+${authorStart} Jon`,
+
+`What vasectomy
+The balls wish to stay awake
+Yet sleep claims them both
+
+${authorStart} Bore`,
+
+`Bald man claims to stream
+Chat left wanting waiting hours pass
+It's snowing on Mt.Fuji
+
+${authorStart} Playirtz`,
+
+`Cum cum cum cum cum
+I am addicted to cum
+Cum Cum, I must spin
+
+${authorStart} Divine`,
+
+`You dumb or something?
+Do you understand haikus? 
+That’s completely wrong.
+
+${authorStart} The Bee Keeper`,
+
+`I hate all the games
+I have the worst reasoning 
+My hair is missing
+
+${authorStart} poop lol`,
+
+`Escape is the dream
+Elevator, trauma dump 
+Favelas again
+
+${authorStart} armchair tugboat captain`,
+
+`white background, red dot
+japanese puzzle level
+one, two, three, SKIPPERS
+
+${authorStart} Mattmattmattmatt.`,
+
+`prime pleb in chat: "thoughts?"
+moon taunted, "VASECTOMY!"
+permanently banned
+
+${authorStart} Mattmattmattmatt.`,
+
+`You will never be
+Born true of the rising sun
+You are a loser
+
+${authorStart} Lizard`,
+
+`Sit here with despair
+Failed to defecate, only farted
+Oh, how I lament.
+
+${authorStart} ryyuuz`,
+
+`Bald man sits on couch
+A woman sits on his lap
+That was not a fart
+
+${authorStart} Mars`,
 ]
 for (let i = 0; i < userSubmitted.length; i++) {
 	if (!userSubmitted[i].match(/era$/i)) {
