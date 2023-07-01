@@ -876,287 +876,367 @@ Timed out for three weeks
 
 ${authorStart} NeatoBurrito`,
 
-`I post cringe in chat
+	`I post cringe in chat
 Bring great shame to family
 Impending exile
 
 ${authorStart} ValkyrTankyr`,
 
-`Old Scholar Play Mario
+	`Old Scholar Play Mario
 Level hard lose many life
 The vaccination abaft
 
 ${authorStart} ValkyrTankyr`,
 
-`A former exile
+	`A former exile
 Aquatic, large, and lumpy
 Observe FishMoley
 
 ${authorStart} jesuscar`,
 
-`Off_topic degens
+	`Off_topic degens
 Sit in dark mother's basement
 They have no bitches
 
 ${authorStart} emily`,
 
-`badlands does a chug
+	`badlands does a chug
 beans regurgitate on me
 I am disgusted
 
 ${authorStart} Naomi Luna`,
 
-`not a hair in sight
+	`not a hair in sight
 fake wife, fake kid, fake dog too
 this is my streamer
 
 ${authorStart} blarkle`,
 
-`Fat, shit, bald and old
+	`Fat, shit, bald and old
 Cant finish a single game
 What a fucking bitch
 
 ${authorStart} emily`,
 
-`Cock Cock Cock Cock Cock
+	`Cock Cock Cock Cock Cock
 Cum Cum Cum Cum Cum Cum Cum
 Borpa spin for cum
 
 ${authorStart} Mora`,
 
-`Checking the stream chat
+	`Checking the stream chat
 Endless stream of taunting jabs
 The bald man cries out
 
 ${authorStart} Jimmy Large`,
 
-`chat scrolling on screen
+	`chat scrolling on screen
 bald man sits in the corner
 did not read my sub
 
 ${authorStart} blarkle`,
 
-`GTA RP
+	`GTA RP
 Yung Dab tearing up the streets
 xQc malds hard
 
 ${authorStart} emily
 	Rollplay Era`,
 
-`large breasts on the screen
+	`large breasts on the screen
 magnificent orbs of flesh
 type and send "BOOBA"
 
 ${authorStart} Kerball`,
 
-`NaM NaM NaM NaM NaM 
+	`NaM NaM NaM NaM NaM 
 NaM NaM NaM NaM NaM NaM NaM 
 NaM NaM NaM NaM NaM
 
 ${authorStart} Kerball`,
 
-`tractor flipped over
+	`tractor flipped over
 chat chimes in with their best help
 please grab the beer box
 
 ${authorStart} NannerFone`,
 
-`hopeful moonmoon
+	`hopeful moonmoon
 a bad final fantasy
 makes a mad baldy
 
 ${authorStart} Langis`,
 
-`I hate every game
+	`I hate every game
 Joy left me with my hairline
 My wife is not real
 
 ${authorStart} Lord Youngbull`,
 
-`moonmoon do kegels
+	`moonmoon do kegels
 just tighten that pelvic floor
 a healthy pasttime
 
 ${authorStart} KegelKing`,
 
-`The Moon rises late 
+	`The Moon rises late 
 The Sun reflects on its face 
 The Moon sets early
 
 ${authorStart} Phil T`,
 
-`tag peacefulhaley
+	`tag peacefulhaley
 call her a big stinky nerd
 eff you haley <farts>
 
 ${authorStart} Kegel King`,
 
-`Hello Nerevar
+	`Hello Nerevar
 Time to ride a Silt Strider
 Play Morrowind Now
 
 ${authorStart} Jake`,
 
-`Microwave coffee 
+	`Microwave coffee 
 Is the only way to go
 If you have shit taste
 
 ${authorStart} Lord Youngbull`,
 
-`I eat sushi
+	`I eat sushi
 No dip soy sauce
 Right way to eat
 
 ${authorStart} BetterWithButter`,
 
-`When coffee is cold,
+	`When coffee is cold,
 Microwave brings back its warmth,
 Artisanal taste
 
 ${authorStart} Guru`,
 
-`Moonmoon play yakuza 0
+	`Moonmoon play yakuza 0
 karaoke, disco and minigames
 much fun you will have!
 
 ${authorStart} Haley`,
 
-`Lots of you guys suck
+	`Lots of you guys suck
 at correctly making a
 haiku to put here
 
 ${authorStart} Willster`,
 
-`Will never go down
+	`Will never go down
 Another night spent on couch
 Horny and alone
 
 ${authorStart} SimplyStin`,
 
-`disheveled, yelling
+	`disheveled, yelling
 "DO I LOOK LIKE A PSYCHO"
 i fear for my life
 
 ${authorStart} NannerFone`,
 
-`playing vr game
+	`playing vr game
 disappointment all over
 nothing like boneworks
 
 ${authorStart} NannerFone`,
 
-`Bald head, glasses aglow,
+	`Bald head, glasses aglow,
 Metal Gear solid soon
 Copium for all.
 
 ${authorStart} Betwobbly`,
 
-`ask moon 'when rimworld?'
+	`ask moon 'when rimworld?'
 bully him into playing
 rimworld streams are great
 
 ${authorStart} KegelKing`,
 
-`Ask my opinion
+	`Ask my opinion
 I will tell you honestly
 Never reproduce
 
 ${authorStart} Excalibur_Z`,
 
-`two things in common
+	`two things in common
 big tits and sweaty armpits
 MOONMOON and Tifa
 
 ${authorStart} mcappy`,
 
-`Like warm morning rain
+	`Like warm morning rain
 A breath of fresh air at dawn
 Hot pee in my ass
 
 ${authorStart} Yungbull`,
 
-`Moon drinks the coffee
+	`Moon drinks the coffee
 Provocative green frog man
 Break is imminent
 
 ${authorStart} Zoul`,
 
-`Waiting in Cutscene
+	`Waiting in Cutscene
 Skip All of the Dialog
 Final Fantasy
 
 ${authorStart} Jon`,
 
-`What vasectomy
+	`What vasectomy
 The balls wish to stay awake
 Yet sleep claims them both
 
 ${authorStart} Bore`,
 
-`Bald man claims to stream
+	`Bald man claims to stream
 Chat left wanting waiting hours pass
 It's snowing on Mt.Fuji
 
 ${authorStart} Playirtz`,
 
-`Cum cum cum cum cum
+	`Cum cum cum cum cum
 I am addicted to cum
 Cum Cum, I must spin
 
 ${authorStart} Divine`,
 
-`You dumb or something?
+	`You dumb or something?
 Do you understand haikus? 
 That’s completely wrong.
 
 ${authorStart} The Bee Keeper`,
 
-`I hate all the games
+	`I hate all the games
 I have the worst reasoning 
 My hair is missing
 
 ${authorStart} poop lol`,
 
-`Escape is the dream
+	`Escape is the dream
 Elevator, trauma dump 
 Favelas again
 
 ${authorStart} armchair tugboat captain`,
 
-`white background, red dot
+	`white background, red dot
 japanese puzzle level
 one, two, three, SKIPPERS
 
 ${authorStart} Mattmattmattmatt.`,
 
-`prime pleb in chat: "thoughts?"
+	`prime pleb in chat: "thoughts?"
 moon taunted, "VASECTOMY!"
 permanently banned
 
 ${authorStart} Mattmattmattmatt.`,
 
-`You will never be
+	`You will never be
 Born true of the rising sun
 You are a loser
 
 ${authorStart} Lizard`,
 
-`Sit here with despair
+	`Sit here with despair
 Failed to defecate, only farted
 Oh, how I lament.
 
 ${authorStart} ryyuuz`,
 
-`Bald man sits on couch
+	`Bald man sits on couch
 A woman sits on his lap
 That was not a fart
 
 ${authorStart} Mars`,
+
+	`Yapping bald, their hate
+Fills the air with a foul stench
+Please just shut up.
+
+${authorStart} JohnSoulz`,
+
+	`A brown stain on white
+A reminder of his shame
+He wont wash it soon
+
+${authorStart} JohnSoulz`,
+
+	`"Play the game, streamer"
+Chatter, how foolish of you
+BRB, coffee
+
+${authorStart} EnDecc`,
+
+	`to go number one
+while number two is allowed
+but not the reverse
+
+${authorStart} NannerFone`,
+
+	`Post pep double you 
+Now massacre the elpers
+He is not aware
+
+${authorStart} CaptHughJass`,
+
+`On the way to eternal wisdom
+A sage must pass seven gates
+Puzzle level, skip
+
+${authorStart} Cubert`,
+
+`Hello, dear chat room
+How are you doing today?
+Hopefully good, smile
+
+${authorStart} SqWires`,
+
+`chat wait patiently
+no metal gear solid four
+a single tear falls
+
+${authorStart} YGGDRA`,
+
+`Put Chat on left Side
+Shooting Baldman across Stream
+Baldman dies, Big W
+
+${authorStart} Sylicix`,
+
+`This is a fun game
+Not sure if Moon will enjoy
+Prepare for anger
+
+${authorStart} Zoul`,
+
+`Green shit on the floor
+He don't pick it up at all
+Saving for next game
+
+${authorStart} Willster`,
+
+`As wife dies of piss
+Basket full of poops Moon stores
+Walk miles silently
+
+${authorStart} Sylicix`,
+
+`stories written like
+bad middle school poetry
+final fantasy
+
+${authorStart} Mcappy`
 ]
 for (let i = 0; i < userSubmitted.length; i++) {
 	if (!userSubmitted[i].match(/era$/i)) {
 		userSubmitted[i] = userSubmitted[i] + '\n\t' + randomDate();
 	}
+
+	console.log(userSubmitted[i]);
 }
 
 let combined = [
