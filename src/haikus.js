@@ -1049,7 +1049,7 @@ ${authorStart} NannerFone`,
 Metal Gear solid soon
 Copium for all.
 
-${authorStart} Betwobbly`,
+${authorStart} Betwoobly`,
 
 	`ask moon 'when rimworld?'
 bully him into playing
