@@ -1229,7 +1229,85 @@ ${authorStart} Sylicix`,
 bad middle school poetry
 final fantasy
 
-${authorStart} Mcappy`
+${authorStart} mcappy`,
+
+`Ask chat for some games,
+deny all good suggestions,
+play metal gear please
+
+${authorStart} Metalus`,
+
+`Any games to play?
+Thousands of options 'fore me...
+I'm gonna go piss.
+
+${authorStart} 12trillioniq`,
+
+`games rebellion
+roleplaying abandoned
+hair subsides
+
+${authorStart} Splendiferous`,
+
+`Soft raindrops PLAP down,
+Life's gentle whispers echo,
+Dreams GET PREGNANT now.
+
+${authorStart} Cubey`,
+
+`You're a Kitty Girl
+You're just like me, Kitty Craze
+Kitty Craze Ah Ah
+
+${authorStart} Harry Wizard`,
+
+`Man with hand in pants
+No matter the obstacle
+Feel cocky all-day
+
+${authorStart} TylerDurden`,
+
+`Metal Gear Solid,
+Will Be Played Next Thursday Guys,
+For Real This Time, Trust
+
+${authorStart} LeadingTone`,
+
+`The English Language
+Two vowels aside another
+It can never be 
+
+${authorStart} 12trillioniq`,
+
+`Read Stream_Talk discord
+On break trying to take shit
+Get  mad at true facts 
+
+${authorStart} Harlinson`,
+
+`Funny green frog spins 
+Endless hunger for sea men 
+Spin spin spin spin spin
+
+${authorStart} Szkud`,
+
+`Believer of Moon
+Gets fucked over and over
+Doubter of Moon lole
+
+${authorStart} Wryllevo`,
+
+`Shitposts fill the stream,
+Bald head shines, madness takes hold,
+Wisdom lost, chaos gleams.
+
+${authorStart} Naoo`,
+
+`Smells of sweaty feet,
+Please play Spongebob-Lemonade,
+My neck was drippin
+
+${authorStart} Kyle4U`,
 ]
 for (let i = 0; i < userSubmitted.length; i++) {
 	if (!userSubmitted[i].match(/era$/i)) {
