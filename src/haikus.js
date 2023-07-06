@@ -1457,7 +1457,7 @@ You must snip your tubes apart
 No more children here
 
 ${authorStart} Boku`,
-]
+].sort(() => Math.random() - 0.5);
 
 for (let i = 0; i < userSubmitted.length; i++) {
 	if (!userSubmitted[i].match(/era$/i)) {
