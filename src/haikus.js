@@ -1,5 +1,35 @@
 const authorStart = '\twritten by';
 
+function getCurrentMonth() {
+	const months = [
+		'January',
+		'February',
+		'March',
+		'April',
+		'May',
+		'June',
+		'July',
+		'August',
+		'September',
+		'October',
+		'November',
+		'Decemeber'
+	];
+	return months[new Date().getMonth()];
+}
+
+function getCurrentFormatedMonthDay() {
+	const day = new Date().getDate();
+	const suffix = getDaySuffix(day);
+	return `${getCurrentMonth()} ${day}${suffix}`;
+}
+
+function getDaySuffix(day) {
+	const suffixes = ['st', 'nd', 'rd'];
+	const suffix = day > 3 ? 'th' : suffixes[day - 1];
+	return suffix;
+}
+
 function randomDate() {
 	//generates a random date
 
@@ -1183,132 +1213,252 @@ He is not aware
 
 ${authorStart} CaptHughJass`,
 
-`On the way to eternal wisdom
+	`On the way to eternal wisdom
 A sage must pass seven gates
 Puzzle level, skip
 
 ${authorStart} Cubert`,
 
-`Hello, dear chat room
+	`Hello, dear chat room
 How are you doing today?
 Hopefully good, smile
 
 ${authorStart} SqWires`,
 
-`chat wait patiently
+	`chat wait patiently
 no metal gear solid four
 a single tear falls
 
 ${authorStart} YGGDRA`,
 
-`Put Chat on left Side
+	`Put Chat on left Side
 Shooting Baldman across Stream
 Baldman dies, Big W
 
 ${authorStart} Sylicix`,
 
-`This is a fun game
+	`This is a fun game
 Not sure if Moon will enjoy
 Prepare for anger
 
 ${authorStart} Zoul`,
 
-`Green shit on the floor
+	`Green shit on the floor
 He don't pick it up at all
 Saving for next game
 
 ${authorStart} Willster`,
 
-`As wife dies of piss
+	`As wife dies of piss
 Basket full of poops Moon stores
 Walk miles silently
 
 ${authorStart} Sylicix`,
 
-`stories written like
+	`stories written like
 bad middle school poetry
 final fantasy
 
 ${authorStart} mcappy`,
 
-`Ask chat for some games,
+	`Ask chat for some games,
 deny all good suggestions,
 play metal gear please
 
 ${authorStart} Metalus`,
 
-`Any games to play?
+	`Any games to play?
 Thousands of options 'fore me...
 I'm gonna go piss.
 
 ${authorStart} 12trillioniq`,
 
-`games rebellion
+	`games rebellion
 roleplaying abandoned
 hair subsides
 
 ${authorStart} Splendiferous`,
 
-`Soft raindrops PLAP down,
+	`Soft raindrops PLAP down,
 Life's gentle whispers echo,
 Dreams GET PREGNANT now.
 
 ${authorStart} Cubey`,
 
-`You're a Kitty Girl
+	`You're a Kitty Girl
 You're just like me, Kitty Craze
 Kitty Craze Ah Ah
 
 ${authorStart} Harry Wizard`,
 
-`Man with hand in pants
+	`Man with hand in pants
 No matter the obstacle
 Feel cocky all-day
 
 ${authorStart} TylerDurden`,
 
-`Metal Gear Solid,
+	`Metal Gear Solid,
 Will Be Played Next Thursday Guys,
 For Real This Time, Trust
 
 ${authorStart} LeadingTone`,
 
-`The English Language
+	`The English Language
 Two vowels aside another
 It can never be 
 
 ${authorStart} 12trillioniq`,
 
-`Read Stream_Talk discord
+	`Read Stream_Talk discord
 On break trying to take shit
 Get  mad at true facts 
 
 ${authorStart} Harlinson`,
 
-`Funny green frog spins 
+	`Funny green frog spins 
 Endless hunger for sea men 
 Spin spin spin spin spin
 
 ${authorStart} Szkud`,
 
-`Believer of Moon
+	`Believer of Moon
 Gets fucked over and over
 Doubter of Moon lole
 
 ${authorStart} Wryllevo`,
 
-`Shitposts fill the stream,
+	`Shitposts fill the stream,
 Bald head shines, madness takes hold,
 Wisdom lost, chaos gleams.
 
 ${authorStart} Naoo`,
 
-`Smells of sweaty feet,
+	`Smells of sweaty feet,
 Please play Spongebob-Lemonade,
 My neck was drippin
 
 ${authorStart} Kyle4U`,
+
+	`Another piss break,
+My bladder is old and small,
+I will be right back
+
+${authorStart} Metalus`,
+
+	`Dampish eventide
+A many, bald man hotdogs fits
+in spite of the ass
+
+${authorStart} Noodleru`,
+
+	`Bald man takes are shit
+Contrarian opinion 
+Why do we still pay?
+
+${authorStart} TylerDurden`,
+
+	`Hairline disarray
+Follicles departing swift
+Scalp on full display
+
+${authorStart} Yacobe`,
+
+	`It is still so real
+Baldies nightmare fullfilled
+The poop expanding
+
+${authorStart} Refraint`,
+
+	`Bald man's shining dome,
+Nest for hotdogs with delight,
+No hair in his way.
+
+${authorStart} Noodleru`,
+
+	`Howl at monitor
+Please attend, Brother Bald Man
+the wedding of Chang
+
+${authorStart} horsedrawnhorse
+	GTA-RP Era`,
+
+	`Red and blue, smiling
+Eyes wide and hips shaking
+PawgChamp never dies
+
+${authorStart} ariesXf`,
+
+	`Bald man's shining dome,
+Nest for hotdogs with delight,
+No hair in his way.
+
+${authorStart} Noodleru`,
+
+	`A gaunt visage
+rythmically, how is this
+skeleton dancing?
+
+${authorStart} Refraint`,
+
+	`Copyrighted tune
+Requested by chat room pleb
+VOD muted again
+
+${authorStart} Emily`,
+
+	`Off-topic is cringe,
+Today's not my birthday, but
+Maybe one day's mine.
+
+${authorStart} Naoo
+(It's Naoo's birthday today ${getCurrentFormatedMonthDay()} btw)`,
+
+	`Bald man leaves his chair
+Images of food on screen
+Hunger fills the chat
+
+${authorStart} Corrino`,
+
+	`Happy birthday Naoo
+It is Naoo's birthday today!
+You cannot protest
+
+${authorStart} Emily
+
+Happy birthday Naoo! ${getCurrentFormatedMonthDay()} Era`,
+
+	`blue and red hogs dance
+A strenuous hard-fought battle
+Or passionate sort?
+
+${authorStart} Splendidferous`,
+
+	`Cumming in the sink
+It flows over the counter 
+Sinking in the cum
+
+${authorStart} Zoul
+	Terrible-Idea Era`,
+
+	`Indecisive man
+Seeks gaming's magnum opus
+Then plays shovelware
+
+${authorStart} Excalibur Z`,
+
+	`Trials of Moonmoon
+Each mistake fuels more teasing
+Rage rises; hair falls
+
+${authorStart} Excailbur Z`,
+
+	`If you want to sex
+You must snip your tubes apart
+No more children here
+
+${authorStart} Boku`,
 ]
+
 for (let i = 0; i < userSubmitted.length; i++) {
 	if (!userSubmitted[i].match(/era$/i)) {
 		userSubmitted[i] = userSubmitted[i] + '\n\t' + randomDate();
