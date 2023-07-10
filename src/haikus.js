@@ -1457,6 +1457,100 @@ You must snip your tubes apart
 No more children here
 
 ${authorStart} Boku`,
+
+`it will not come out
+help me help me help me help
+great log in the pond
+
+${authorStart} 123`,
+
+`Coffee break Inbound
+Delusions of family
+Microwave goes ding
+
+${authorStart} Yacobe`,
+
+`A dream of fresh snow
+Is it cool and refreshing
+Or a dire omen
+
+${authorStart} Jake`,
+
+`Shut up bald assboy,
+Play Metal Gear Solid Four,
+It has been three years
+
+${authorStart} Bisquickway`,
+
+`every time you ask 
+he increases the timer
+you making it worse
+
+${authorStart} Tape
+	don't ask for MGS4 please Era`,
+
+`please post .png
+of cumbo art by tacos
+it must be archived
+
+${authorStart} VerbalSilence`,
+
+`Give a man a brick
+See him observe the half-wall
+Now man stuck Lo-Ding
+
+${authorStart} AriesXf
+	Landlord Super Era`,
+
+`Man with hand in pants
+No matter the obstacle
+Feel cocky all-day
+
+${authorStart} TylerDurden`,
+
+`Many have fallen
+A magnificent demon
+John Souls walks again
+
+${authorStart} Jayvrekk`,
+
+`Options presented:
+Play good game, or shovelware.
+You know the outcome.
+
+${authorStart} Sv`,
+
+`Angry bald slams fist
+Each strike a straw on the back
+Cannot risk desk death
+
+${authorStart} Azeban`,
+
+`Construction gone mad
+Bald man runs from life on Earth
+Stairway to heaven
+
+${authorStart} 12trillioniq
+	Landlord Super Era`,
+
+`Gamba alarm rings
+Bet is set, now back to bed
+"When Live" not paid out
+
+${authorStart} EnDecc
+	Internet Janitor Era`,
+
+`Wait what is this screen
+What do you mean "it's haiku"
+What's a syllable
+
+${authorStart} EnDecc`,
+
+`Shitty gaming skills
+"I'm the god gamer, you bitch"
+Moon is bald and old
+
+${authorStart} Emily`,
 ].sort(() => Math.random() - 0.5);
 
 for (let i = 0; i < userSubmitted.length; i++) {
