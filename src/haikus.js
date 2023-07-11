@@ -1551,6 +1551,48 @@ ${authorStart} EnDecc`,
 Moon is bald and old
 
 ${authorStart} Emily`,
+
+`piss running down leg
+wetting my blue jeans darker
+filling up my shoes
+
+${authorStart} Iowaman`,
+
+`bald man in "stealth" game
+non targets die too often
+is it really stealth
+
+${authorStart} inanimateblob`,
+
+`Tape adds the haikus
+Poetry ever-growing
+Many more to come
+
+${authorStart} SV`,
+
+`Bald man's dark deceit,
+Poopfist's trust shattered, pain seeps,
+Betrayal's cruel feat.
+
+${authorStart} who`,
+
+`A dank beachfront shop
+Balding man with shit stick lurks
+Diaper Dan beware
+
+${authorStart} Dennisdamenace`,
+
+`Bald streamer's losing,
+Fury flares, chat feels the heat,
+Gaming skills lacking
+
+${authorStart} Songbird`,
+
+`Late and overweight,
+Bald head shines in sun's bright light,
+Start stream and take break 
+
+${authorStart} who`,
 ].sort(() => Math.random() - 0.5);
 
 for (let i = 0; i < userSubmitted.length; i++) {
