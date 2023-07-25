@@ -1618,21 +1618,8 @@ combined = [
 
 export const haikus = combined;
 
-combined.splice(0, 0,
-	`Submit new haikus,
-Share your wisdom with the stream,
-Subscriber discord.
-
-Find thread in:
-#arts-and-crafts > #Haiku`);
 
 
 combined.splice(0, 0,
 	`${userSubmitted.length} haikus
-
-Too many haikus
-Made by the community
-For right syllables
-
-this haiku written by Arufa
 `);
